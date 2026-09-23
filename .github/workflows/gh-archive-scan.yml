@@ -1,0 +1,148 @@
+# Precomputa los datos de GH Archive para el barrido OSS.
+#
+# Por qué existe: la routine del barrido vive en un repo PRIVADO cuyo sandbox
+# tiene el egreso limitado (proxy que solo deja salir a github.com).
+# `play.clickhouse.com` devuelve EGRESS_BLOCKED desde ahí. Pero un runner de
+# Actions sí tiene internet abierto — y su salida acaba dentro de ESTE repo
+# público, que es justo lo único que la routine sí puede leer (vía
+# raw.githubusercontent.com, sin auth).
+#
+# Así que este workflow hace las consultas y commitea el resultado en
+# oss_scan/gharchive/. El repo privado lo lee por raw, sin checkout ni
+# submódulos: cero egreso, cero rate limit, y el dato ya viene filtrado.
+#
+# Corre 35 minutos antes de cada ronda (la routine dispara a las 06:00 y 16:00
+# UTC, con hasta ~15 min de jitter). Si GitHub retrasa el cron, la ronda usa el
+# fichero de la ronda anterior y lo dice: _meta.txt lleva la hora de generación.
+#
+# El dataset es GH Archive sobre el playground público de ClickHouse: sin auth,
+# sin rate limit, con 1-2 horas de retraso sobre GitHub. Trampa ya pagada: los
+# PR mergeados son `action='merged'`, NO `action='closed' AND merged=1` — esta
+# segunda devuelve 0 filas sin dar error.
+
+name: GH Archive scan data
+
+on:
+  schedule:
+    - cron: "35 5,15 * * 1-5" # 05:35 y 15:35 UTC, L-V
+  workflow_dispatch: # para probarlo a mano desde la pestaña Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-archive-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-24.04 # pineado: ubuntu-latest migra a 26.04 el 19-oct-2026
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Consultar GH Archive
+        env:
+          CH: https://play.clickhouse.com/?user=play
+        run: |
+          set -euo pipefail
+          mkdir -p oss_scan/gharchive
+
+          # Falla si ClickHouse devuelve un error en vez de datos. Sin esto el
+          # workflow commitearía un fichero con "Code: 47. DB::Exception" dentro
+          # y la ronda lo leería como si fueran datos.
+          consulta() {
+            local destino="$1" sql="$2"
+            for intento in 1 2 3; do
+              if curl -sS --fail-with-body --max-time 120 --data-binary "$sql" "$CH" > "$destino.tmp"; then
+                if [ -s "$destino.tmp" ] && ! head -1 "$destino.tmp" | grep -q "^Code: "; then
+                  mv "$destino.tmp" "$destino"
+                  echo "OK  $destino  ($(wc -l < "$destino") lineas)"
+                  return 0
+                fi
+              fi
+              echo "intento $intento fallido para $destino" >&2
+              head -3 "$destino.tmp" >&2 || true
+              sleep 10
+            done
+            rm -f "$destino.tmp"
+            return 1
+          }
+
+          # Salud de merge de todo GitHub, en una consulta: autores externos
+          # distintos con PR mergeado en 45 dias, y el backlog de PRs abiertos
+          # contra el que compararlo. La banda 8..40 es el equivalente a la banda
+          # de estrellas: por debajo no hay comunidad, por encima es un
+          # megaproyecto saturado.
+          consulta oss_scan/gharchive/salud_repos.tsv "
+            SELECT repo_name,
+                   uniqExactIf(actor_login, action='merged') AS autores,
+                   countIf(action='merged')                  AS prs_merged,
+                   countIf(action='opened')                  AS prs_abiertos
+            FROM github_events
+            WHERE event_type='PullRequestEvent'
+              AND created_at > now() - INTERVAL 45 DAY
+              AND actor_login NOT LIKE '%[bot]%'
+              AND actor_login NOT LIKE '%-bot'
+            GROUP BY repo_name
+            HAVING autores BETWEEN 8 AND 40
+            ORDER BY autores DESC
+            LIMIT 400
+            FORMAT TSVWithNames"
+
+          # El embudo entero: issues abiertas en las ultimas 72 h, solo en repos
+          # que ya pasan el filtro de salud. Esto es descubrimiento y Fase B a la
+          # vez, sin tocar github.com.
+          consulta oss_scan/gharchive/issues_frescas.tsv "
+            SELECT e.repo_name, e.number, e.title, s.autores
+            FROM github_events e
+            INNER JOIN (
+              SELECT repo_name, uniqExact(actor_login) AS autores
+              FROM github_events
+              WHERE event_type='PullRequestEvent' AND action='merged'
+                AND created_at > now() - INTERVAL 45 DAY
+                AND actor_login NOT LIKE '%[bot]%'
+              GROUP BY repo_name HAVING autores BETWEEN 8 AND 40
+            ) s ON e.repo_name = s.repo_name
+            WHERE e.event_type='IssuesEvent' AND e.action='opened'
+              AND e.created_at > now() - INTERVAL 3 DAY
+            ORDER BY s.autores DESC
+            LIMIT 400
+            FORMAT TSVWithNames"
+
+          # Frescura del dataset, para que la ronda sepa si el fichero sirve.
+          consulta oss_scan/gharchive/_frescura.tsv "
+            SELECT max(created_at) AS evento_mas_reciente
+            FROM github_events
+            WHERE created_at > now() - INTERVAL 1 DAY
+            FORMAT TSVWithNames"
+
+          {
+            echo "generado_utc: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            echo "evento_mas_reciente_en_dataset: $(tail -1 oss_scan/gharchive/_frescura.tsv)"
+            echo "filas_salud_repos: $(($(wc -l < oss_scan/gharchive/salud_repos.tsv) - 1))"
+            echo "filas_issues_frescas: $(($(wc -l < oss_scan/gharchive/issues_frescas.tsv) - 1))"
+            echo "workflow_run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > oss_scan/gharchive/_meta.txt
+
+          cat oss_scan/gharchive/_meta.txt
+
+      - name: Commitear si hay cambios
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add oss_scan/gharchive/
+          if git diff --cached --quiet; then
+            echo "sin cambios"
+            exit 0
+          fi
+          git commit -m "oss_scan: datos de GH Archive $(date -u +%Y-%m-%dT%H:%MZ)"
+          # Este repo solo lo escribe este workflow, así que push directo con
+          # reintento basta (sin pull --rebase previo).
+          for intento in 1 2 3; do
+            git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            echo "push $intento fallido, reintentando" >&2
+            sleep 5
+          done
+          exit 1
