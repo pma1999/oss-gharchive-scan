@@ -51,14 +51,21 @@ jobs:
           # Falla si ClickHouse devuelve un error en vez de datos. Sin esto el
           # workflow commitearía un fichero con "Code: 47. DB::Exception" dentro
           # y la ronda lo leería como si fueran datos.
+          # Un TSV con solo cabecera también es fallo: el 2026-09-23 el
+          # playground devolvió 0 filas sin error y se commiteó basura en
+          # verde. Cuenta como intento fallido y reintenta igual que ante
+          # un `Code:` antes de rendirse.
           consulta() {
             local destino="$1" sql="$2"
             for intento in 1 2 3; do
               if curl -sS --fail-with-body --max-time 120 --data-binary "$sql" "$CH" > "$destino.tmp"; then
                 if [ -s "$destino.tmp" ] && ! head -1 "$destino.tmp" | grep -q "^Code: "; then
-                  mv "$destino.tmp" "$destino"
-                  echo "OK  $destino  ($(wc -l < "$destino") lineas)"
-                  return 0
+                  if [ "$(wc -l < "$destino.tmp")" -ge 2 ]; then
+                    mv "$destino.tmp" "$destino"
+                    echo "OK  $destino  ($(wc -l < "$destino") lineas)"
+                    return 0
+                  fi
+                  echo "intento $intento: $destino vino vacío (solo cabecera)" >&2
                 fi
               fi
               echo "intento $intento fallido para $destino" >&2
@@ -111,17 +118,49 @@ jobs:
             FORMAT TSVWithNames"
 
           # Frescura del dataset, para que la ronda sepa si el fichero sirve.
+          # La 2a columna (sin WHERE) distingue "dataset con lag" de "tabla
+          # vacía": si el global es reciente pero la ventana 24h viene a
+          # cero, el WHERE se quedó sin filas, no el dataset.
           consulta oss_scan/gharchive/_frescura.tsv "
-            SELECT max(created_at) AS evento_mas_reciente
+            SELECT maxIf(created_at, created_at > now() - INTERVAL 1 DAY) AS evento_mas_reciente_24h,
+                   max(created_at) AS evento_mas_reciente_global
             FROM github_events
-            WHERE created_at > now() - INTERVAL 1 DAY
             FORMAT TSVWithNames"
+
+          # Quién sirvió el dato, para diagnosticar ventanas transitorias
+          # del playground. Va a /tmp para no commitear otro fichero: solo
+          # sus valores acaban en _meta.txt.
+          consulta /tmp/ch_servidor.tsv "
+            SELECT hostName() AS host, version() AS version, now() AS ahora_servidor
+            FORMAT TSVWithNames"
+
+          # Guardia de datos: si el dataset vino vacío o con más de 6 h de
+          # lag, fallar SIN commit. Un TSV con solo cabecera en verde ya
+          # nos quemó una vez (2026-09-23): era una ventana transitoria
+          # del playground, la tabla estaba sana.
+          filas_salud=$(($(wc -l < oss_scan/gharchive/salud_repos.tsv) - 1))
+          filas_issues=$(($(wc -l < oss_scan/gharchive/issues_frescas.tsv) - 1))
+          if [ "$filas_salud" -eq 0 ] || [ "$filas_issues" -eq 0 ]; then
+            echo "ERROR: GH Archive devolvió un dataset vacío (salud=$filas_salud filas, issues=$filas_issues filas)." >&2
+            echo "Posible ventana transitoria del playground de ClickHouse: no se commitea nada." >&2
+            exit 1
+          fi
+          reciente="$(tail -1 oss_scan/gharchive/_frescura.tsv | cut -f1)"
+          ts_reciente="$(date -u -d "$reciente" +%s 2>/dev/null || echo 0)"
+          lag=$(( $(date -u +%s) - ts_reciente )); lag="${lag#-}"
+          if [ "$lag" -gt 21600 ]; then
+            echo "ERROR: dataset con lag: el evento más reciente es $reciente (más de 6 h de antigüedad)." >&2
+            echo "Posible ventana transitoria del playground de ClickHouse: no se commitea nada." >&2
+            exit 1
+          fi
 
           {
             echo "generado_utc: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            echo "evento_mas_reciente_en_dataset: $(tail -1 oss_scan/gharchive/_frescura.tsv)"
-            echo "filas_salud_repos: $(($(wc -l < oss_scan/gharchive/salud_repos.tsv) - 1))"
-            echo "filas_issues_frescas: $(($(wc -l < oss_scan/gharchive/issues_frescas.tsv) - 1))"
+            echo "evento_mas_reciente_en_dataset: $(tail -1 oss_scan/gharchive/_frescura.tsv | cut -f1)"
+            echo "evento_mas_reciente_global: $(tail -1 oss_scan/gharchive/_frescura.tsv | cut -f2)"
+            echo "filas_salud_repos: $filas_salud"
+            echo "filas_issues_frescas: $filas_issues"
+            echo "clickhouse_servidor: $(tail -1 /tmp/ch_servidor.tsv | tr '\t' ' ')"
             echo "workflow_run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > oss_scan/gharchive/_meta.txt
 
