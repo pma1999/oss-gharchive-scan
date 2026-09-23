@@ -48,6 +48,13 @@ jobs:
           set -euo pipefail
           mkdir -p oss_scan/gharchive
 
+          # Quién nos sirve, LO PRIMERO: si las consultas vienen vacías el
+          # step muere antes de llegar a _meta.txt, y sin esto el log no
+          # diría qué host sirvió el vacío. No es fatal: si no responde,
+          # las consultas ya fallarán solas.
+          echo "ClickHouse servidor (pre-check):"
+          curl -sS --max-time 30 --data-binary "SELECT hostName(), version(), now() FORMAT TabSeparated" "$CH" || echo "pre-check sin respuesta" >&2
+
           # Falla si ClickHouse devuelve un error en vez de datos. Sin esto el
           # workflow commitearía un fichero con "Code: 47. DB::Exception" dentro
           # y la ronda lo leería como si fueran datos.
