@@ -44,6 +44,13 @@ jobs:
       - name: Consultar GH Archive
         env:
           CH: https://play.clickhouse.com/?user=play
+          # El DNS geográfico manda a cada cliente a su réplica regional y
+          # play-us-v2 sirve github_events VACÍA (probado 2026-09-23: el
+          # runner caía siempre ahí). Esta IP es el frontal EU (AWS
+          # eu-central-1, verificado que sirve play-eu-v2 con datos).
+          # Si ClickHouse la cambia, el run queda rojo (no silencioso) y
+          # hay que refrescarla con `nslookup play.clickhouse.com` desde EU.
+          CH_RESOLVE: play.clickhouse.com:443:3.121.209.215
         run: |
           set -euo pipefail
           mkdir -p oss_scan/gharchive
@@ -53,7 +60,7 @@ jobs:
           # diría qué host sirvió el vacío. No es fatal: si no responde,
           # las consultas ya fallarán solas.
           echo "ClickHouse servidor (pre-check):"
-          curl -sS --max-time 30 --data-binary "SELECT hostName(), version(), now() FORMAT TabSeparated" "$CH" || echo "pre-check sin respuesta" >&2
+          curl -sS --max-time 30 --resolve "$CH_RESOLVE" --data-binary "SELECT hostName(), version(), now() FORMAT TabSeparated" "$CH" || echo "pre-check sin respuesta" >&2
 
           # Falla si ClickHouse devuelve un error en vez de datos. Sin esto el
           # workflow commitearía un fichero con "Code: 47. DB::Exception" dentro
@@ -65,7 +72,7 @@ jobs:
           consulta() {
             local destino="$1" sql="$2"
             for intento in 1 2 3; do
-              if curl -sS --fail-with-body --max-time 120 --data-binary "$sql" "$CH" > "$destino.tmp"; then
+              if curl -sS --fail-with-body --max-time 120 --resolve "$CH_RESOLVE" --data-binary "$sql" "$CH" > "$destino.tmp"; then
                 if [ -s "$destino.tmp" ] && ! head -1 "$destino.tmp" | grep -q "^Code: "; then
                   if [ "$(wc -l < "$destino.tmp")" -ge 2 ]; then
                     mv "$destino.tmp" "$destino"
