@@ -1,113 +1,116 @@
 repo_name	number	title	autores
-pingdotgg/t3code	13717	SSH environment stuck "Reconnecting" on Linux when Tailscale SSH requires interactive re-auth ("check" mode)	40
-kirodotdev/KiroCrew	13833	fleet_probe: `cmd=` cuts the joined command line at an in-argument separator, so it undercounts withheld tokens and can print a launcher the process never ran	40
 kirodotdev/KiroCrew	14106	messaging: QueueReceipt.opened_by is written but never read once every rule moved onto address_key	40
-kirodotdev/KiroCrew	14171	build(docker): install kiro-cli from the shared pin files, not latest/manifest.json	40
+pingdotgg/t3code	13717	SSH environment stuck "Reconnecting" on Linux when Tailscale SSH requires interactive re-auth ("check" mode)	40
 kirodotdev/KiroCrew	14263	subagent_manager twin adopts process_identity.kill_verified_process and with_kill_failure	40
+kirodotdev/KiroCrew	14171	build(docker): install kiro-cli from the shared pin files, not latest/manifest.json	40
 kirodotdev/KiroCrew	14582	Re-attempt MCP server registration after a recoverable auth failure, so a later credential vend makes the server usable	40
 pingdotgg/t3code	13965	[Bug]: A thread whose agent leaves a dev server running stays "Monitoring" on desktop with no completion alert, while mobile reports it completed	40
 pingdotgg/t3code	13990	[Bug]: Preview tabs sometimes log "sandboxed_renderer.bundle.js script failed to run" (Electron #54149, fixed in 44.4.4)	40
+kirodotdev/KiroCrew	14816	Give monitoring-loop stop notices their own notification channel	40
+Azure/azure-rest-api-specs	46785	[critical] Package-name approval: mixed-plane / stale Mgmt label misclassifies data-plane approvers	39
 floci-io/floci	4516	ELBv2: ALB does not proxy WebSocket upgrades to instance/ip targets	38
 floci-io/floci	4541	[BUG] API Gateway v1: PutRestApi mode=merge is treated as overwrite and silently drops configuration	38
 raycast/extensions	31638	[Apple Reminders] ...Smart lists	35
 vllm-project/vllm-omni	8216	[Bug]: nightly CI,  tests/e2e/accuracy/omni_duplex_eval/test_omni_duplex_eval_ci.py::test_omni_duplex_eval_ci[three-stage-single-gpu], AssertionError: assert 1 in (0, -6)	34
 microsoft/vscode	338189	Agents: pending-approval session row grows to thousands of pixels when scrolling	32
-microsoft/vscode	337951	"Agent Debug Logs" setting is missing / not available to enable	32
+NousResearch/hermes-agent	123853	Discord: explicit @mention in a quote-reply never auto-threads (reply carve-out too broad)	30
 NousResearch/hermes-agent	123315	/skills write-approval subcommands (approve/pending/diff) produce no output on desktop chat and TUI	30
 NousResearch/hermes-agent	123523	[Bug]: hermes curator pin/unpin report success for a name no skill has; the real skill stays unpinned	30
-NousResearch/hermes-agent	123853	Discord: explicit @mention in a quote-reply never auto-threads (reply carve-out too broad)	30
+NousResearch/hermes-agent	124841	[Feature]: Hebrew (עברית) locale for the Desktop app	30
 NousResearch/hermes-agent	123934	[Feature]: can add more tools like image search like a featrues ai can take screen shot of project and see it and like more qol featrues llike a improve for ui ux animation  ??	30
 NousResearch/hermes-agent	124371	[Bug]: Desktop drops single line breaks in assistant replies	30
 NousResearch/hermes-agent	124380	[Bug]: Kanban worker killed by reclaim or max-runtime (Windows, SIGKILL escalation) leaves its state.db session open	30
 NousResearch/hermes-agent	124540	ACP session/fork records no lineage (no parent_session_id / _branched_from), unlike /branch and the API fork	30
-NousResearch/hermes-agent	124841	[Feature]: Hebrew (עברית) locale for the Desktop app	30
-ggml-org/llama.cpp	29431	Misc. bug: Vulkan ARGSORT ne=[2048,1,1,1] only sorts half of the array on some devices	30
-apache/airflow	73739	Dag version inflation check runs against zip file instead of individual dags	29
-BasedHardware/omi	19039	[Bug]: Unhandled AttributeError on non-datetime started_at in Cloud Tasks merge worker	28
+NousResearch/hermes-agent	126818	Fallback provider does not revert to primary after primary is refunded mid-session	30
 BasedHardware/omi	19298	Bounty Proposal: Bulgarian (bg) Agent Quickstart Guide ( USD)	28
+BasedHardware/omi	19039	[Bug]: Unhandled AttributeError on non-datetime started_at in Cloud Tasks merge worker	28
 open-metadata/OpenMetadata	34081	Playwright: contexts intermittently boot with a lost storageState token and land on the login screen	27
-camunda/camunda	64076	[Admin DS] Migrate login page to DS `UI/LoginScreen`	26
 apache/superset	44667	Table: a per-column formatting override cannot be returned to the chart-level setting	25
 dotnet/runtime	134737	[API Proposal]: Add boolean value overload for TagList.Add()	24
+ray-project/ray	66535	[RFC][Serve][LLM] Pluggable Model-Level Routing for Multi-Model Applications	23
 omnigent-ai/omnigent	8370	[Feature] Make BoxLite managed box cpus and memory configurable	22
+dsx-ai-factory/infra-controller	6825	bug: Remove stale Prometheus series on gNMI delete	21
+MakazhanAlpamys/Soup	1422	An output path that aliases the input is not refused: ingest, prune-prompt, ra-dit and best-of-n destroy the input	18
 zed-industries/zed	64819	gpui_macos: closing a window can abort on Touch Bar Macs (_NSTouchBarFinderObservation deregistration lands on an already-deallocated view)	18
-makecindy/cindy	5081	bug: 单张参考图超过 3MiB 时改图必失败，请求未发到上游	17
 vllm-project/semantic-router	4317	[Feature] Re-evaluate a context-gated decision when a transformation drops request demand below the band that selected it	17
-anomalyco/opencode	51452	server: drain replay of pending step fails with Mistral 400 (\'str object\' has no attribute \'items\') and retries every ~15s	16
+google-deepmind/formal-conjectures	6622	Erdős Problem 994: status mismatch (repo=solved, erdosproblems.com=formally solved)	16
 BerriAI/litellm	43285	[Bug]: llm_requests_hanging false positives under sustained load — completion-marker TTL (threshold+100) shorter than tracker TTL (1.5×threshold+60) with 20-oldest scan	16
 anomalyco/opencode	51432	desktop: render LaTeX math in messages	16
 kornia/kornia	4938	`NamedPose.from_rt` fails for a batched `(B>1, 3, 3)` rotation tensor and silently drops the batch dim of `(1, 3, 3)`	16
-google-deepmind/formal-conjectures	6622	Erdős Problem 994: status mismatch (repo=solved, erdosproblems.com=formally solved)	16
 monarch-initiative/dismech	12915	An evidence item cannot say which earlier study a restated figure comes from	16
-torch-spyre/torch-spyre	4901	[4895-F] Ingest contract: historical created_at + replay timestamp + backfill mark	16
-anomalyco/opencode	51344	[FEATURE]: Show which server a session tab belongs to	16
+anomalyco/opencode	51452	server: drain replay of pending step fails with Mistral 400 (\'str object\' has no attribute \'items\') and retries every ~15s	16
+BerriAI/litellm	43569	Azure EU Data Zone GPT-6 Astra cost map underprices Sweden Central by 10%	16
 anomalyco/opencode	51809	[Desktop 1.18.33] Assistant text not rendered when a turn includes tool/shell calls	16
-microsoft/onnxruntime	32804	[Build] Windows CUDA internal tests fail CMake generation due to a circular target dependency	15
+mattermost/mattermost	38813	[Bug]: Text overlaps in Threads view on Windows 11 at 200% display scaling	16
 CherryHQ/cherry-studio	21079	[Bug]: Please bring back the delete chat history feature, why was it changed to archive? It\'s too hard to use	15
-twentyhq/twenty	26657	Multi-workspace: same email cannot register on a second workspace, but the first workspace’s password joins it	15
-wazuh/wazuh	39633	Syscollector emits no `package-installed` event when the packages inventory is at its limit, although it still emits `package-uninstalled`	15
 wazuh/wazuh	39658	Vulnerability Detection: each RHEL kernel CVE reported once per kernel subpackage (kernel, kernel-core, kernel-modules...)	15
+twentyhq/twenty	26832	File attachments no longer accessible in Notes	15
 MillenniumDawn/Millennium-Dawn	4860	[FOCUS TREE] Economy Tree Expansion	14
-use-agent-os/agent-os	3434	[Bug]: rpc_trading.py _trading_allowances_list returns inconsistent response envelope between single-chain and all-chain queries	14
-microsoft/agent-framework	8760	[Feature]: BackgroundAgentsProvider cannot tell a task that is running on another process from one whose owner died	14
-objectstack-ai/objectui	10701	finding(types,docs): the \'agenda\' retirement citations objectui#5740 / objectui#5784 answer 404, and so do the landing PRs objectui#5782 / objectui#5806; shipped zod describe strings, JSDoc, schema-reference and three pending changesets cite them	14
-objectstack-ai/objectui	10659	finding(plugin-form,tests): the ModalForm edit case of `editDirtyPayload-10156` failed intermittently in CI with the typed value lost and the whole record sent — `ModalForm` carries none of the first-read gate objectui#10190 gave `DrawerForm`	14
 use-agent-os/agent-os	3432	[Bug]: redaction is scheme-allowlisted, so ws/ftp/ssh/smtp URL passwords reach the model verbatim	14
+ramensoftware/windhawk-mods	5725	Add Taskbar Quick Pin Dock mod is ready-for-reviewer	14
+use-agent-os/agent-os	3434	[Bug]: rpc_trading.py _trading_allowances_list returns inconsistent response envelope between single-chain and all-chain queries	14
 frappe/frappe	43495	Shell and routes: the shell page renderer moves into frappe/shell/	14
 frappe/frappe	43500	Desk v2 guardrails: write the rules into ARCHITECTURE.md, AGENTS.md and the maps	14
 objectstack-ai/objectui	10951	finding(components): an `element:number` with neither `object` nor a `dataSource` binding now passes the html tier and paints an empty dash silently: PR objectui#10944 relaxed `object`\'s `required`, so no JSX gate reports the missing object	14
-astral-sh/ruff	28922	B018: useless-expression one more example to document	13
 maximhq/bifrost	7583	UI: LLM Logs stat cards truncate their trend figures at 1440px	13
-ramensoftware/windhawk-mods	5725	Add Taskbar Quick Pin Dock mod is ready-for-reviewer	13
-gke-labs/kube-agents	2023	litellm: silent router default_fallbacks to a smaller model corrupts delegated workers\' tool calls	13
+astral-sh/ruff	28922	B018: useless-expression one more example to document	13
 frappe/erpnext	59544	Depreciation Auto Posting for both the Finance Books, Double Depreciation Expense Posting.	13
 vercel/next.js	99348	WASM: codeFrameColumns rejects `color: boolean` and `maxWidth: undefined`, which the napi binding and Next\'s own callers accept	13
-ryanbr/noop	2473	Android: an HR-only night stages sessions and still produces no sleep, HRV or Charge	12
 ryanbr/noop	2492	Heart Rate in Workout View is using dates instead of time in X-Axis	12
-stablyai/orca	22910	[Bug]: Number followed by a dot mid-sentence renders as a nested list item in chat	12
-stablyai/orca	22928	Mobile: leaving a still-starting terminal can leave the desktop stuck in "Your phone is in control"	12
-stablyai/orca	22976	orchestration: a Run-bound lead never receives dispatch:<id> mail or replies	12
 stablyai/orca	23060	Aborted static web downloads retain file readers after server shutdown	12
+ryanbr/noop	2473	Android: an HR-only night stages sessions and still produces no sleep, HRV or Charge	12
+stablyai/orca	22976	orchestration: a Run-bound lead never receives dispatch:<id> mail or replies	12
 termux/termux-packages	32007	[Bug]: gdb 18.1 aarch64 internal-error box_one_message assertion failed	12
+apache/datafusion-comet	6332	Native CSV V2 scan parses timestamps as UTC and ignores the session timezone	12
+apache/datafusion-comet	6333	days transform is evaluated in the session timezone, while hours and Iceberg use UTC	12
 apache/seatunnel	12502	[Bug][Connector-V2] Escape DuckDB catalog metadata lookup literals	12
 stablyai/orca	23501	[Feature]: Add Claude Code plugin marketplace manifest for bundled skills	12
+Effect-TS/effect	8595	Schema JIT: TemplateLiteral with a oneOf part accepts overlapping input, and loses diagnostics as a transformation target	12
+stablyai/orca	23690	[Feature] Request: Collapse All Button in left side bar	12
+termux/termux-packages	32058	Auto update failing for fresh-editor	12
+dlang/dmd	23927	D should save fcw and mxcsr registers between fibers, it may lead to context loss and UB	11
 pollinations/pollinations	15529	[QUEST] List the hosted MCP servers in the MCP registry and directories	11
 sktime/sktime	11313	[ENH] HolidayFeatures: option to label holiday window days with their offset to the holiday	11
-dlang/dmd	23927	D should save fcw and mxcsr registers between fibers, it may lead to context loss and UB	11
-umontreal-diro/IFT3913	1199	Recherche de coéquipier	11
+ROCm/TheRock	8574	[Feature]: rocjitsu parity (PoC)	11
+pollinations/pollinations	15658	[App Submission] Pollinations for Photopea	11
 pollinations/pollinations	15608	[App Submission] Pollinations for Godot 4	11
 pollinations/pollinations	15579	[QUEST] Pollinations add-on for Godot 4	11
 repowise-dev/repowise	2622	Codex function_call tool uses never reach the session decision miner, so the files they touch are never attributed	11
 scipy/scipy	26290	BUG: stats.ttest_ind / special.stdtr returns zero for a representable subnormal Student-t tail	11
 pollinations/pollinations	15612	[App Submission] Pollinations for Obsidian	11
 RPCS3/rpcs3	19591	[Regression] Mortal Kombat (BLUS30522) hard freeze ~60s after boot: audio port open/close storm + SPU stop-the-world livelock (#19467)	10
-alltheplaces/alltheplaces	19147	Coiff&Co	10
+dotnet/maui	38963	[aw] Rerun Review Scanner failed	10
 alltheplaces/alltheplaces	19194	Discussion, US elementary/middle/high schools - NCES or district spiders?	10
 vorssaint/vorssaint-utils	2261	Animated companion state for idle Dynamic Island	10
-Emanuele-web04/synara	1341	Cursor (and probably Droid) re-opens the OAuth login page on every session start	9
-microsoft/aspire	20524	Replace project updates in `aspire update` with an agentic skill	9
-Pasta-Devs/Marinara-Engine	6678	[Issue]: Ruleset combat-on-a-board e2e sometimes ends without an outcome after 80 AI turns	9
 fossasia/eventyay	5932	Speaker custom questions missing from CSV Speaker Import column mapping	9
-TriliumNext/Trilium	11710	Add a Replace text action to the search notes function	9
-abue-ammar/tinycast	1167	[Bug]: Notes reopens right after closing when text is selected across multiple lines	9
-omacom/omarchy	13297	MacBookPro14,1: BCM4350 hybrid coexistence starves Bluetooth audio on 2.4 GHz Wi-Fi	9
+abue-ammar/tinycast	1185	[Feature]: Space and Tab should activate aliases	9
 omacom/omarchy	13274	ASUS ExpertBook B9406CAA: PixArt touchpad I2C wedge freezes the desktop on linux 7.2.3	9
+microsoft/aspire	20524	Replace project updates in `aspire update` with an agentic skill	9
+TriliumNext/Trilium	11710	Add a Replace text action to the search notes function	9
+omacom/omarchy	13297	MacBookPro14,1: BCM4350 hybrid coexistence starves Bluetooth audio on 2.4 GHz Wi-Fi	9
 vercel/eve	3831	Settling a workflow-tool run writes three full copies of session state (cancel/release steps)	9
 vllm-project/aibrix	2819	[Bug] Sync prefix indexer hashes every block of a BlockStored event against the first block\'s parent	9
-abue-ammar/tinycast	1185	[Feature]: Space and Tab should activate aliases	9
+NVIDIA/cudf-spark	16121	[BUG] Spark master IT: three failures from #15973 still fail after it was closed	9
+Pasta-Devs/Marinara-Engine	6822	Game Mode: a ruleset\'s native: false turns off untyped Game Master items and the fight\'s item guess	9
 aethersdr/AetherSDR	5994	Allow a smaller, adjustable S-meter applet size	9
 abue-ammar/tinycast	1202	[Extension]: IMDb Search	9
 JuliaLang/julia	63432	Lazy libblastrampoline: `ccall` into `Base.liblapack_name` jumps to a null pointer	9
 omacom/omarchy	13410	Fingerprint-unlock crash (pam_fprintd) leaves orphaned duplicate Quickshell bar, unmanageable by omarchy restart shell	9
 tgstation/tgstation	97974	Greenshift station goal supply packs not enabled for ordering like the report says they will be	9
-open-telemetry/opentelemetry-ebpf-instrumentation	3577	Dynamic probe instrumentation	8
-seaweedfs/seaweedfs	11490	s3: a bucket emptied with `rm --recursive` can become permanently undeletable when allowDeleteBucketNotEmpty=false	8
-AstrBotDevs/AstrBot	10242	[Bug] provider_settings.wake_prefix 未随 #9215 豁免 WebChat，WebChat 仍须带前缀才触发 LLM	8
-code-yeongyu/oh-my-openagent	8930	macOS background click: research restoring window-server order after delivery	8
+hackclub/hcb	15181	[Contractors/Payments] Include transfer fee before processing	9
 HalNagoyaRecTime/rectime-api	493	[Refactor] Master ImportのApplication→Infrastructure直接依存を解消する	8
+blockchain-maxis/signet	601	Harden the CLI\'s HTTP client: retries, `Retry-After`, User-Agent, https-only	8
+code-yeongyu/oh-my-openagent	8930	macOS background click: research restoring window-server order after delivery	8
+AstrBotDevs/AstrBot	10242	[Bug] provider_settings.wake_prefix 未随 #9215 豁免 WebChat，WebChat 仍须带前缀才触发 LLM	8
+blockchain-maxis/signet	458	Caching and revalidation for the contract route	8
 microsoft/PyRIT	2878	LiteLLMChatTarget does not flag or survive output-token truncation	8
+seaweedfs/seaweedfs	11490	s3: a bucket emptied with `rm --recursive` can become permanently undeletable when allowDeleteBucketNotEmpty=false	8
 a2ui-project/a2ui	2822	[FEATURE]: Replace `Dynamic*` Schema Types with Standard JSON Schema Types in A2UI v1.0	8
-farion1231/cc-switch	7732	切换 Codex provider 后 CLI 模型列表不更新：app-server daemon 缓存旧 model catalog，需手动杀进程重启	8
+hushh-labs/hushh-research	7242	Marketing: Meta Ads for Private Agent One launch day - setup, 4 promoted posts, insights	8
+polarsource/polar	14962	Embed docs missing CSP origins for embedded checkout	8
+NVIDIA/TensorRT-Model-Connect	1482	Migrate modernbert to the semantic Task SDK	8
+alibaba/open-code-review	1596	ocr scan --path . silently selects no files	8
 apache/shenyu	7351	[Task] Refactor AI Proxy into protocol, provider, and transport layers	8
 egovernments/DIGIT-DevOps	5250	Configure custom NACLs to replace default allow-all (ControlCase VPC-041)	8
+farion1231/cc-switch	7732	切换 Codex provider 后 CLI 模型列表不更新：app-server daemon 缓存旧 model catalog，需手动杀进程重启	8
 farion1231/cc-switch	7734	Codex 0.158 报 unknown configuration field `mcp_servers.*.type`：Codex 投影不应写入 `type`	8
