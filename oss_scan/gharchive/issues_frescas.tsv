@@ -1,294 +1,113 @@
 repo_name	number	title	autores
-kirodotdev/KiroCrew	13405	slack: trusted-bot messages with content only in attachments (AWS Chatbot alarm cards) are silently dropped	40
-kirodotdev/KiroCrew	13629	Main chat: show live token/cost usage while a turn is running	40
-kirodotdev/KiroCrew	13252	ci(readiness): fork PR verdict freezes at \'waiting on Opus 5 Review (not started)\' when the fork lane finishes after CI	40
-kirodotdev/KiroCrew	13396	Terminal panel: bindable keyboard shortcuts for tab management (new/close/switch) and reliable focus toggle from chat input	40
-kirodotdev/KiroCrew	13584	Strict enabled reading in InstalledApp.from_dict: string "false" reads as enabled for 94 readers	40
-kirodotdev/KiroCrew	13771	Config Summary selects explain their options only in a hover tooltip	40
-kirodotdev/KiroCrew	12863	feat(dashboard): deep link to create a new pre-configured session (agent, prompt prefill, title, idempotency)	40
-kirodotdev/KiroCrew	12870	ci(windows): test_maintenance_quiesce_wakes_a_firing_remove_waiter times out on the 1s deactivate_and_wait bound	40
-kirodotdev/KiroCrew	12895	Set the browser tab title from the active context, detail-first (e.g. "xyz - Chat - Kiro Crew")	40
-kirodotdev/KiroCrew	13231	tests: dev_fleet loop-thread filesystem trap catches pytest\'s own lazy imports under xdist	40
-kirodotdev/KiroCrew	13242	POST /api/agents accepts a name the roster grammar drops; refuse it server-side	40
-Azure/azure-rest-api-specs	46637	[aw] ARM API Review: Automated Workflow produced no safe outputs	39
-floci-io/floci	4364	[BUG] Lambda: a refused OnFailure send parks the DynamoDB Streams shard instead of dropping the batch	39
-floci-io/floci	4282	CI should not run for draft PRs	39
-ai-dynamo/dynamo	15176	fix(router): per-model and per-pool separation for the router\'s per-attempt metrics	38
-ai-dynamo/dynamo	15218	DEP: Change worker TGP without restarting workers	38
-MetaMask/metamask-mobile	36719	[Bug]: App crashes when clicking on activity row for pending/in-progress transaction	34
-microsoft/vscode	337743	Are “fun working messages” intended to occur ~1 in 50 message picks, rather than ~1 in 50 chat interactions?	32
-microsoft/vscode	337697	alt+TAB issue for AI agent side bar	32
-microsoft/vscode	337672	Agents: per-session background activity view (async shells + background subagents)	32
-microsoft/vscode	337732	Chat asks for approval to read an image explicitly pasted as context	32
-microsoft/vscode	337768	showw	32
-microsoft/vscode	337870	Allow configuring max lines and height for Chat Sticky Scroll (e.g., chat.stickyScroll.maxLineCount)	32
-microsoft/vscode	337321	selecting a remote workspace in picker does not actually make a selection	32
-microsoft/vscode	337325	Agents Window: deleted worktree remains selectable and creates a failed session	32
-microsoft/vscode	337400	MacOS: Ctrl+T and Ctrl+P cancel if window focus is taken away	32
-microsoft/vscode	337514	automations screen has lots of error text that\'s unclear what it means	32
-microsoft/vscode	337579	Markdown preview does not scroll to an HTML anchor (<a id>) in a linked file	32
-fleetdm/fleet	54026	One-time enroll secrets: rejected enrollment logs a pointer for host_id and a misleading "will overwrite" warning	31
-lingdojo/kana-dojo	30920	[good first issue] 🐡 Add new Theme: Shinkansen Speed (good-first-issue)	30
-t8y2/dbx	10195	[Bug] macOS MCP binary cannot read Keychain key, always DATA_MIGRATION_REQUIRED after successful migration	30
-t8y2/dbx	10216	[Bug] 搜索功能误搜索所有数据库并自动建立连接	30
-lingdojo/kana-dojo	30926	[good first issue] 🎎 Add new Video Game Quote 333 (good-first-issue)	30
-lingdojo/kana-dojo	30837	[good first issue] 🌺 Add new Video Game Quote 752 (good-first-issue)	30
-lingdojo/kana-dojo	30847	[good first issue] 🍙 Add new Trivia Question 637 (good-first-issue)	30
-BasedHardware/omi	15968	Conversation finalization reads Firestore on the event loop for every capture	28
-BasedHardware/omi	16035	[Bounty proposal] fix(mcp): handle null content on locked memories ($50-100 proposed)	28
-BasedHardware/omi	16171	[Bounty proposal] docs(cli): add conversation export to Weibo recipe	28
-BasedHardware/omi	16271	[Bounty proposal] docs(python-cli): add Kurdish agent quickstart guide	28
-BasedHardware/omi	15976	[Patch + bounty proposal] CLI screenshot export fails after writing markup-like paths	28
-BasedHardware/omi	16314	[Bounty proposal] docs(python-cli): add Xhosa agent quickstart guide	28
-BasedHardware/omi	16350	[Bounty proposal] docs(python-cli): add Cree agent quickstart guide	28
-BasedHardware/omi	16366	[Bounty proposal] docs(python-cli): add Ainu agent quickstart guide	28
-BasedHardware/omi	16392	[Bounty proposal] docs(python-cli): add Ojibwe agent quickstart guide	28
-BasedHardware/omi	16442	[Bounty proposal] docs(export): add Snapchat export recipe	28
-BasedHardware/omi	16567	[Bounty proposal] docs(python-cli): add Hindi agent quickstart guide	28
-BasedHardware/omi	16631	[Bounty proposal] docs(export): add Messenger export recipe	28
-BasedHardware/omi	16652	[Bounty proposal] docs(export): add Viber export recipe	28
-BasedHardware/omi	16669	[Bounty proposal] docs(export): add WhatsApp export recipe	28
-BasedHardware/omi	16794	[Bounty proposal] fix(omi-coingecko-crypto-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	16824	[Bounty proposal] docs(python-cli): add Chitchamek (cjt) AI agent quickstart guide ($25 proposed)	28
-BasedHardware/omi	16829	[Bounty proposal] docs(python-cli): add Cree (cr) AI agent quickstart guide ($25 proposed)	28
-BasedHardware/omi	16846	[Bounty proposal] docs(python-cli): add Danish (da) AI agent quickstart guide ($25 proposed)	28
-BasedHardware/omi	16847	[Bounty proposal] docs(python-cli): add Brahui (brh) AI agent quickstart guide ($25 proposed)	28
-BasedHardware/omi	16958	[Bounty proposal] docs(python-cli): add Sindhi (sd) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17153	[Bounty proposal] docs(python-cli): add Breton (br) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17169	[Bounty proposal] docs(python-cli): add Estonian (et) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17351	[Bounty proposal] docs(python-cli): add AgusanManobo (ag) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17408	[Bounty proposal] docs(python-cli): add ScottishGaelic (gd) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17442	[Bounty proposal] docs(python-cli): add Indonesian (id) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17476	[Bounty proposal] docs(python-cli): add SichuanYi (ii) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17485	[Bounty proposal] docs(python-cli): add ScottishGaelic (gd) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17494	[Bounty proposal] docs(cli): add BigQuery database export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	17535	[Bounty proposal] fix(omi-hive-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	17572	[Bounty proposal] fix(omi-hive-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	17624	[Bounty proposal] docs(python-cli): add Dutch (nl) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17661	[Bounty proposal] fix(omi-twitter-chat-tools-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	17663	[Bounty proposal] fix(omi-usgs-earthquake-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	17697	[Bounty proposal] docs(python-cli): add Tigrinya (ti) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	17838	Paid app subscribers lose access for a day before most monthly renewals	28
-BasedHardware/omi	18004	[Bounty proposal] docs(cli): add HDF5 data export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18053	[Bounty proposal] docs(python-cli): add Gujarati (guj) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	18080	[Bounty proposal] docs(export): add Kik export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18090	[Bounty proposal] docs(export): add Kik export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18128	[Bounty proposal] fix(omi-usgs-earthquake-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	18134	[Bounty proposal] fix(omi-wikipedia-app): sanitize error messages and prevent exception leaks	28
-BasedHardware/omi	18159	[Bounty proposal] docs(cli): add H2 database export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18196	[Bounty proposal] docs(cli): add CHM document export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18202	[Bounty proposal] docs(python-cli): add Albanian (albanian) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	18201	[Bounty proposal] docs(cli): add ODT document export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18210	[Bounty proposal] docs(python-cli): add Basque (eus) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	18222	[Bounty proposal] docs(python-cli): add Mirandese (mir) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	18255	[Bounty proposal] docs(cli): add Arrow data export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18320	[Bounty proposal] docs(export): add Slack export recipe for OMI (25USD proposed)	28
-BasedHardware/omi	18368	[Bounty proposal] docs(python-cli): add Norwegian (nor) AI agent quickstart guide (25USD proposed)	28
-BasedHardware/omi	15836	[Bounty proposal] docs(python-cli): Portuguese (pt) AI agent quickstart guide ($25 proposed)	28
-NousResearch/hermes-agent	119149	killpg fallbacks signal a process group the child may not lead (shared group / recycled PID)	28
-NousResearch/hermes-agent	119276	[Bug]: Docker messaging gateways: unset terminal.cwd silently disables all project-context discovery (AGENTS.md never loads)	28
-NousResearch/hermes-agent	119279	[Bug]: Profile-scoped secret reads fall back to os.environ on any failure, borrowing the default profile\'s credentials under multiplex	28
-NousResearch/hermes-agent	119334	[Bug] Pane-bridge requests are silently dropped when no window hosts the asking session — 45s stall + one ambiguous error (residual after #114981)	28
-NousResearch/hermes-agent	119566	Desktop: single assistant turn with pre-tool intro text renders as two response groups with verbatim duplicate final answer	28
-NousResearch/hermes-agent	119948	[Bug]: On macOS, `hermes gateway install --no-start-now` and the setup wizard\'s "Start the gateway now?" = No still start the gateway	28
-NousResearch/hermes-agent	119969	[Bug]: With no timezone configured, cron jobs and naive one-shots fire an hour off after a DST change	28
-NousResearch/hermes-agent	120655	fix(vault): vault fill scrubber substring-masks short field values (no min length / word boundary)	28
-NousResearch/hermes-agent	120730	Desktop: attaching an image to a chat served by another machine sends the client path instead of bytes ("image not found: /Users/…")	28
-NousResearch/hermes-agent	120742	A turn result carrying only \'error\' reports success on the exit-code, runs-API, cron and TUI surfaces	28
-NousResearch/hermes-agent	120951	Indented code fences are invisible to the fence-aware chunker — code blocks get split mid-block	28
-BasedHardware/omi	15911	[Bounty proposal] recipe(python-cli): analyze speaker turns, talk time percentages, and speech balance metrics ($25 proposed)	28
-BasedHardware/omi	16279	[Bounty proposal] docs(python-cli): add Armenian agent quickstart guide	28
-NousResearch/hermes-agent	121670	[Test]: ~-expansion tests patch HOME only, so on Windows ~ still expands to the real profile	28
-camunda/camunda	63823	Job streaming fails to start on Spring Boot 4.1.x: protobuf gencode 4.36.0 vs runtime 4.35.1 (regression in 8.10.0-alpha5)	27
-diegosouzapw/OmniRoute	14782	fix: auto-update always detects npm installs as "source" ("Not a git repository") because currentDir is frozen at build time	26
-pytorch/executorch	23131	Enable Nemotron-3-Diarization on MLX, CUDA, XNNPACK, and Vulkan	26
-kubernetes/kubernetes	142366	Switch to upstream cel library	26
-Untrivial-ai/agent-orchestrator	5801	Merge conflict link opens GitHub\'s /conflicts page, which often 404s	25
-apache/superset	44576	MongoDB datasets with a schema return no rows in charts	25
-kubernetes-sigs/kueue	16172	🐛 MultiKueue does not resynchronize workload state after watch reconnect	25
-kubernetes-sigs/kueue	16010	🐛 MultiKueue: the manager\'s flavor assignment is not carried to the worker, so manager-side per-flavor quota need not describe where work ran	25
-QwenLM/qwen-code	12530	Qwen Live: use the Web Shell endpoint everywhere, native macOS Host opt-in	24
-dotnet/runtime	134454	JIT: (bug) `IsMonotonicallyIncreasing` accepts a negative seed behind `lcl + (lcl + cns)`, relop folded incorrectly	24
-dotnet/runtime	134528	System.Security.Cryptography.Tests.HpkeImplementationTests.InvalidEncapsulation_Rejected fails in CI	24
-dotnet/runtime	134545	JIT: (Perf) `(x & ~0xFF) == 0` is not used to prove `x < 256` for bounds checks	24
-mastra-ai/mastra	24827	[BUG] @mastra/langfuse: observation version is always the @mastra/core version; metadata.version goes to langfuse.trace.version, which Langfuse does not read	24
-Comfy-Org/ComfyUI_frontend	18609	Remove PP Formula metric overrides once corrected font files land	23
-UiPath/skills	3503	Triage the 25 rules the preview author-capability port dropped (#3172, before the port audit existed)	23
-ss14Starlight/space-station-14	6326	Fire bomb crafting	23
-Dolibarr/dolibarr	40693	addPaymentToBank() creates wrong \'company\' bank_url links when $this->amounts contains empty/zero entries (supplier and customer payments)	22
-python/cpython	158077	C API: Remove deprecated `PySlice_GetIndicesEx()`, or remove the deprecation	22
-can1357/oh-my-pi	12869	fix(async): prevent background completion notices from cascading automatic backgrounding	22
-duckdb/duckdb	26042	`FILL` returns different extrapolation results for `BIGINT` and `DOUBLE` when values decrease	22
-duckdb/duckdb	26095	MERGE with an unused DELETE branch raises a false unique violation after reopening a persisted database (1.5.5)	22
-python/cpython	157954	`inspect.formatannotation` should use fully qualified name for type aliases	22
-python/cpython	158004	`asyncio.as_completed()` drops an awaitable after a pending `anext()` call is cancelled	22
-langgenius/dify	42798	Word docx images inside nested tables are silently dropped during knowledge base indexing	22
-anomalyco/models.dev	7808	[missing-model] github-copilot: gpt-6-sol	21
-Wei-Shaw/sub2api	7576	deepseek 502	21
-dsx-ai-factory/infra-controller	6658	Default BF3 DPF configuration requires host PF1 while hiding it	21
-flutter/flutter	193154	[cross_file] Update 1p plugins that depend on `cross_file`	21
-flutter/flutter	193159	[macOS 26] test/integration.shard/plist_parser_test.dart failing	21
-apache/datafusion	25615	Propagate aggregate-result statistics into HAVING	20
-apache/datafusion	25650	Find a solution to prevent processes being OOM killed due to inaccurate memory accounting	20
-apache/datafusion	25671	`PushDownLimit` keeps a redundant `Limit` above a `Sort` it gave a fetch, so every `ORDER BY ... LIMIT n` query runs one extra optimizer pass	20
-objectstack-ai/objectstack	20071	runtime: the standalone stack stamps `environmentId: \'env_local\'`, so `ObjectQLPlugin` skips `sys_metadata` hydration on every self-hosted boot — an object published at runtime answers 404 on the data API after a restart	19
-risa-labs-inc/BossConsole	1624	MCP destructive-shell gate: follow-ups from #1613 review	19
-risa-labs-inc/BossConsole	1677	Follow-ups from #940: CloseInput cancellation, IPC 1.4.0 compatibility note, test tightening	19
-risa-labs-inc/BossConsole	1634	plugin-store: viewer-dependent responses (download handlers and signed URLs) set no Cache-Control	19
-volcengine/OpenViking	5360	[Bug]: Web Studio requests a non-existent user space (viking://user/claude/…) and probes never-generated peer sidecars, producing 404/403 noise	19
-zed-industries/zed	64716	Goose by ACP escapes buublewrap	19
-objectstack-ai/objectstack	20085	`view.hidden` and `view.owner` are declared on the strict `ViewItem` authoring door and stored verbatim, but nothing in either repo reads or writes them — and `check:liveness` cannot see it, because its view walk stops at the container arm	19
-objectstack-ai/objectstack	20094	driver-turso remote: a malformed `$between` is refused with a bare `Error` (no code, no status) that names the field and echoes the comparand, where the local face answers `INVALID_FILTER` / 400, withheld	19
-objectstack-ai/objectstack	20105	lint: `validate-action-name-refs` (`action-name-undefined`) never walks `record:alert` `action.actionName` or `page:header` `actions` ids, so a misspelled CTA or header action passes spec and lint and is dropped silently at runtime	19
-openvinotoolkit/openvino	38363	[ci-doctor] Weekly CI Remediation Report	19
-zed-industries/zed	64592	Git commit shortcut doesn\'t work	19
-objectstack-ai/objectstack	19853	A stripped master-detail repoint unlocks a parent-scoped readonlyWhen: a by-id update judges the lock against the parent it names, not the parent it stores	19
-FreeCAD/FreeCAD	32883	BIM: IFC Export: Linked Objects missing	18
-Bike4Mind/bike4mind	3170	extractHTMLTitle interpolates < > and quotes into the artifact title attribute	17
-sonic-net/sonic-mgmt	28232	[qos] test_pipe_mode_dscp_preservation is broadcom-only — no pipe mode DSCP preservation coverage on marvell-teralynx	17
-expo/expo	50523	[expo-router] The `expo-source` export condition points at a `src/` tree the package does not publish, so nothing resolves under jest-expo	17
-expo/expo	50557	[expo-font][iOS] OTA reload removes the active registration after a duplicate font name	17
-anomalyco/opencode	50764	TaskTool foreground path reports false "completed" with empty output when background job is missing from registry	16
-anomalyco/opencode	50689	docs: add plain (plain-English mode plugin) to the ecosystem page	16
-anomalyco/opencode	50852	config: published schema (opencode.ai/config.json) is still V1, so editors flag valid V2 configs	16
-anomalyco/opencode	50800	v2: V1 sessions in non-git directories invisible after migration (legacy catch-all project)	16
-anomalyco/opencode	50964	[Desktop] Model picker missing in prompt box (models enabled in Settings, but can\'t select one)	16
-anomalyco/opencode	50980	migrate: V1-era session exists only in legacy table, invisible to V2 clients	16
-anomalyco/opencode	50999	migration: v1 sessions imported under project \'global\' are invisible in project session lists	16
-anomalyco/opencode	50870	[Bug] Linux build: HTTP server returns 502 on all API routes (blocks --port TUI and multiplexer panes)	16
-monarch-initiative/dismech	12755	Dyskeratosis_Congenita_Autosomal_Recessive_8 curates the digenic TYMS-ENOSF1 disease under MONDO:0859319 (the DCLRE1B entity)	16
-anomalyco/opencode	51118	Please wake the dev environment / fix the tunnel	16
-anomalyco/opencode	51152	auth: per-project credential activation (provider profile per folder)	16
-anomalyco/opencode	51100	[BUG] Final assistant responses rendered truncated in BigBud thread UI (display-only)	16
-kornia/kornia	4831	`find_essential` backward raises `_LinAlgError` in the `linalg.eigvals` backward on degenerate samples	16
-monarch-initiative/dismech	12693	Curate microphthalmia/coloboma 13 (MONDO:0975809)	16
-google-deepmind/formal-conjectures	6574	Wikipedia/SnakeInTheBox: `snake_upper_bound` applies Zémor\'s bound for coils (induced cycles) to snakes (induced paths)	16
-anomalyco/opencode	51269	V2: subagent/child-session LLM request fails validation — system[4] InvalidType vs LLM.SystemPart	16
-elizaOS/eliza	32109	test(core): consolidate repeated model-registration coverage	16
-elizaOS/eliza	32429	Remove timing parser fixtures already owned by the REST boundary	16
-elizaOS/eliza	32454	fix(training): reconcile translation corpus output and resume accounting	16
-elizaOS/eliza	32473	Simplify SDK boundary test fixtures and remove duplicate signing coverage	16
-kornia/kornia	4787	augmentation: RandomPerspective returns NaN on a size-1 spatial axis, even at distortion_scale=0	16
-stdlib-js/stdlib	15473	[RFC]: Add native C implementations for cumulative statistics functions in stats/base	16
-CherryHQ/cherry-studio	20993	[Bug]: MCP tools/list fails entirely when a tool\'s outputSchema has a boolean sub-schema (tools[1/9/25].outputSchema.properties.canonical_state) — All tools fail to load	15
-milvus-io/milvus	53852	[Enhancement]: [Stanford BM02] Use complement evaluation for broad bitmap ranges	15
-kunchenguid/firstmate	5593	Acknowledged status annotations are presented again on the next drain, so the same lines replay across several acks	15
-wazuh/wazuh	39597	macOS logcollector can crash on agent stop because the ULS reader keeps running while the shutdown handler frees the `log` process	15
-quarkusio/quarkus	56929	Deprecate JPMSExportBuildItem	15
-llm-d/llm-d-router	2995	test: narrow nolint:all to specific linters in proxy test handlers	15
-shopware/shopware	20688	`bin/console plugin:create`: Migrate generated admin module and storefront controller to TypeScript	15
-shopware/shopware	20715	Test: Fix visual test Visual/Storefront/CmsSlider.spec.ts	15
-milind-soni/OpenMausBot	1704	macOS: show Screen Recording / Accessibility setup for "This computer" during onboarding, and name the missing permission in the chat error	15
-milind-soni/OpenMausBot	1745	Voice notes 5/5: range serving, rooms/API paths, per-bot toggle, docs	15
-milvus-io/milvus	53747	[Feature]: Lexical Text Highlighter to Go SDK	15
-wazuh/wazuh	39578	Evaluate libcurl native zstd content-encoding in the agent HTTPS client	15
-MillenniumDawn/Millennium-Dawn	4758	[BUG] French Focus Tree: Georges Besse II reward wasted on Auvergne-Rhône-Alpes	14
-frappe/frappe	43325	Print button cannot print the server generated PDF	14
-lance-format/lance	9539	bug: querying a bloom filter built from a zero-length bitset panics	14
-zeroclaw-labs/zeroclaw	11096	RFC: Risk-based merge-result freshness	14
-frappe/frappe	43362	A return visit after a script or DocType change paints the old version, then the new	14
-facebook/astryx	6635	[Infra] pr-a11y fails every PR that touches packages/lab/src/Chat	14
-msys2/MINGW-packages	31910	Migrate python-winsdk to pywinrt	13
-openobserve/openobserve	14854	On-Call feature issue list	13
-openobserve/openobserve	14886	Single-node memory: where it goes, and a set of fixes (idle anon 238 → 57 MiB)	13
-gke-labs/kube-agents	1988	Integrations: read GitLab MRs, issues and pipelines through Hermes\' GitLab MCP catalog entry, via the credential proxy	13
-jundot/omlx	3882	[Performance] M5 Max: batch-size-1 decode slower than generate_step (Gemma VLM and Qwen3-VL, oMLX 0.6.4)	13
-maximhq/bifrost	7429	[Feature]: Support OpenRouter’s native Batch API	13
-BuilderIO/agent-native	5691	clips.agent-native.com: pop up menu does not scroll	12
-Azure/azure-dev	10165	prompt managed agent optimize deploy report needs fix	12
-BuilderIO/agent-native	5786	Production health check failing	12
-Azure/azure-dev	10174	[Issue] Evaluation init authoring and generated handoffs can produce unusable configurations	12
-Azure/azure-dev	10145	Keep Foundry scenario skill descriptions within 1,024 characters	12
-Azure/azure-dev	10162	Create changelog for v1.34.2 release	12
-KittyCAD/modeling-app	14115	GUI helix Sweep intermittently renders an incomplete tube	12
-apache/datafusion-comet	6143	IcebergCommitExec rethrows the raw cause where Spark 3.x wraps write failures in a SparkException	12
-termux/termux-packages	31944	[Bug]: mesa vulkan drivers refuse installl	12
-Effect-TS/effect	8484	ManagedRuntime.disposeEffect can permanently abandon layer finalizers when interrupted	12
-verilator/verilator	8496	O(N^2) modport resolution in V3LinkDot after scoping with many interface instances	12
-stablyai/orca	22703	Use Windows Codex newline encoding for multiline launch and continuation drafts	12
-matrixorigin/matrixone	29317	[Bug]: prepared FIELD miscompares mixed DECIMAL and string runtime operands	12
-Nano-Collective/nanocoder	1468	[Bug] "Failed to fetch latest version: Unexpected token" on launch	12
-Azure/azure-dev	10180	Foundry file references silently accept trailing objects and documents	12
-mxsm/rocketmq-rust	10899	[Bug🐛] Wait for scheduled panic settlement in runtime test	12
-pollinations/pollinations	15313	[QUEST] Add z-ai/glm-5.3-flashx via OpenRouter	12
-looplj/axonhub	2532	chat/completions returns "model not found" for any model registered in the global models catalog	12
-matrixorigin/matrixone	29244	[Bug]: Sirius parity harness validates only after all runs and loses failure artifacts	12
-matrixorigin/matrixone	29247	[Perf]: Runtime filters not generated for non-direct TABLE_SCAN children (TODO deeper than 1 level, affects DEDUP)	12
-matrixorigin/matrixone	29273	[Bug]: classic fulltext BOOLEAN trailing * on a 4+ rune CJK stem does prefix_eq of the whole stem and misses the indexed trigrams	12
-vercel/next.js	99064	Mount-time setState in a layout-level client ancestor forces client render of a pending streamed Suspense boundary (no error; startTransition doesn\'t help)	12
-TencentBlueKing/bk-lite	5877	[theme][nats] NATS 治理总单：身份、授权、凭据与契约问题清单	11
-mealie-recipes/mealie	8530	[BUG] - Data Management "Create Unit" dialog is messed up on Firefox	11
-masslight/ottehr	9754	Billing App - Claim creation queue needs a mechanism to pick the desired "match" before retrying, if needed	11
-openchamber/openchamber	3881	[Bug] 插件运行时注入的智能体在编辑页不显示身份与角色描述	11
-superset-sh/superset	7819	GitHub integration is broken across multiple orgs	11
-omacom/omarchy-pkgs	610	linux-omarchy: wifi: mt7921e/MT7922 restore returns -110 after hibernation, then resets and reconnects	11
-opensandbox-group/OpenSandbox	1979	support custom envs by sandbox template	11
-langfuse/langfuse	17804	bug: Assistant skips prompt caching and reasoning options when LANGFUSE_AI_MODEL is a Bedrock application inference profile ARN	11
-langfuse/langfuse	17857	bug: Bedrock OpenAI GPT-6 Sol/Luna/Astra calls fail with \'Invalid JSON response\' when the model returns reasoning	11
-mamedev/mame	16231	CD-i: Addams Family - Audio Video Desync after Slow Motion	11
-rustfs/rustfs	8100	S3 table clean table , rewrite_data_files failed	11
-rustfs/rustfs	8101	S3 table clean table , rewrite_manifests failed	11
-sipyourdrink-ltd/bernstein	6191	pii_scan gate does not block on its two critical rules: an SSN or credit-card number passes	11
-multica-ai/multica	8781	[Bug]: Token usage for resumed Claude sessions is reported cumulatively per task, inflating runtime analytics	11
-agno-agi/agno	10455	[Bug] Gemini._format_messages merges functionResponse with subsequent user text when using stop_after_tool_call=True	10
-activepieces/activepieces	15714	[Feature]: Transfer platform ownership to another admin	10
-Tencent/teamai-cli	757	Should interactive `init` optionally prompt for a project?	10
-JustVugg/colibri	1703	Ternary weight formats (~1.75-2.13 bpw): in scope? and how to handle the GGUF/safetensors gap	10
-agentmuxai/agentmux	3651	Tracking: universal install dialog (plain-language steps by default, console under Details)	10
-getsentry/sentry-javascript	24685	Verify source map upload against a real Sentry org	10
-lgse/strata	1235	feat(omastrata): OMA-03 accurate help, Settings, and context hints	10
-linuxfoundation/lfx-self-serve	2972	feat(dashboards): add geographic distribution to the events tab	10
-elastic/integrations	21613	[Serverless observability] [kubeletstats_input_otel] Failing test daily: policy test: test-environment-vars.yml in kubeletstats_input_otel.	10
-getsentry/sentry-javascript	24690	Investigate CI performance improvements	10
-dotnet/maui	38869	[ci-scan-net11] Integration test result publication repeatedly finds no TRX files	10
-nautechsystems/nautilus_trader	5088	[Interactive Brokers] Historical data requests fail with error 2188 ("up-to-the-second" advisory) on ibapi 3.3.0	10
-darktable-org/darktable	22367	darkroom filmstrip: selection of active image can be lost	10
-dotnet/maui	38811	[aw] Failed jobs: CI Failure Scanner (net11.0)	10
-elastic/integrations	21582	[Serverless security] [kubeletstats_input_otel] Failing test daily: policy test: test-k8s-api-config.yml in kubeletstats_input_otel.	10
-lgse/strata	1212	Space in the filter opens quick preview instead of typing a space when a result is selected	10
-trezor/trezor-suite	32781	Scrollable Tabs	10
-1lck/Lithe-IDEA	814	[Feature] 「自动识别」JDK / Maven 显示实际选中的版本和来源，运行面板一步进入配置编辑	9
-Comfy-Org/ComfyUI	16490	Dynamic VRAM: a ModelSamplingDiscrete schedule leaks into later runs of the same checkpoint (buffers restored by attribute path), giving wrong or black images reported as success	9
-apache/rocketmq-dashboard	4926	[Bug] Offset reset preview is unreachable for a stopped consumer group although resetOffsetNew supports offline groups	9
-apache/rocketmq-dashboard	4935	[Bug] Client-side column sorters on server-paginated tables reorder only the current page	9
-OpenHands/software-agent-sdk	5252	[Testing gap]: No cross-version conversation fixture, so a dependency pin can make older persisted conversations unreadable without CI noticing	9
-Pasta-Devs/Marinara-Engine	6537	[Issue]: Advanced Memory preserves partial scene gaps and hides corrected character access	9
-ethereum-optimism/optimism	23015	[Tracking] Amsterdam on the OP Stack	9
-ArduPilot/ardupilot	34489	MAVLink2 signing: unsigned packets accepted on channel 0 when channel 0 is a network link (Linux boards)	9
-abue-ammar/tinycast	1121	[Feature]: Show an extension\'s loading state while its rows are on screen	9
-Gentleman-Programming/gentle-ai	4975	feat(pi): honor component selection for optional Engram	9
-vercel/ai	21485	AI Gateway: meta/muse-image-1.0 image edits fail — Muse route sends multipart, Meta rejects it under ZDR (JSON `images` edit body is supported)	9
-omacom/omarchy	13022	Network panel: Forget (×) not centered; no Cancel while connecting	9
-penpot/penpot	11827	Upgrade MCP SDK dependency to v2 and adopt new protocol version	9
-longbridge/gpui-kit	3192	macOS: intermittent NSRangeException from _NSTouchBarFinderObservation removing a nextResponder observer	9
-fossasia/eventyay	5872	[Stripe Unification] Phase 3: Migrate Ticket Payments to Core & Implement Smart Split Payments	9
-microsoft/aspire	20384	[aw] PR Documentation Check hit engine rate limit (HTTP 429)	9
-vercel/ai	21275	google-vertex: gs:// file URL in a tool result throws AI_DownloadError instead of being sent as functionResponse.parts[].fileData	9
-vercel/ai	21364	@ai-sdk/amazon-bedrock: Claude Opus 5.5 returns 400 when toolChoice is \'required\' or a named tool (forced tool_choice not supported)	9
-vercel/ai	21398	harness-pi: with `reattachInProcess: false`, a suspended turn is still parked in memory and never released	9
-Arize-ai/openinference	3823	[bug] anthropic: instrument() raises ModuleNotFoundError on anthropic 1.8.0 — _utils._transform renamed to _utils._prepare	8
-a2ui-project/a2ui	2772	E2E tests failed on main (PR #2596)	8
-Betta-Pay/BettaPay-Contract	795	Batch instance TTL bump to single call per entry point	8
-Human-Agent-Society/reef	584	[Task] Give data processors dataset-epoch semantics for cold-start training	8
-Betta-Pay/BettaPay-Contract	780	Migrate calculate_split to checked fee legs	8
-OSSCA-chromium/contributions	500	[docs] Linux sandbox 링크 갱신	8
-Dolibarr/dolibarr-community-modules	1062	stancer: the Transifex sync of 2026-09-20 replaced the fr_FR, de_DE, es_ES and it_IT translations with English (second time)	8
-erxes/erxes	9452	[Web: Hotel]: pencil-design, i18n.	8
-sonichi/sutando	4718	check-pending-tasks.sh Stop hook blocks guest one-shot sessions on the live core\'s own queue	8
-microsoft/hve-core	3015	Refresh the HVE Core Transparency Note	8
-MemberJunction/MJ	4751	Chat artifact search runs one Collection Artifacts query per matched artifact, and that query fails on PostgreSQL	8
-Sekelenao/Flinkboot	214	[Refactor]: Clean redundant Mockito mocks in validator unit tests	8
-Human-Agent-Society/reef	625	[Bug] reef-hermes tells me to resume with hermes --resume, which does not work from my shell	8
-chatwoot/chatwoot	16001	Support for Custom HTML Email Templates & Rich HTML Outbound Emails	8
-crackedstudio/tikka	1597	[indexer] The DLQ replay CLI has no tests	8
-TencentCloud/Octop	1148	[feature] 内置连接器支持 Agent Mail CLI（agently-cli）	8
-llm-d/llm-d	2584	[Feature]: Agent-Aware KV Cache Affinity Scheduling and Cache Management	8
-code-yeongyu/oh-my-openagent	8701	Route deep-low through GPT-6 Sol and every Luna rung through GPT-6 Luna Fast	8
-hushh-labs/hushh-research	6979	[Research] Chris Woodhouse pilot and backend pipeline	8
-kunchenguid/no-mistakes	1182	CI step treats action_required (workflows awaiting maintainer approval) as failing checks and starts repair rounds	8
-google/perfetto	7590	`trace_processor_shell` does not escape args in `androidProcessDump`	8
-reflex-dev/reflex	7294	reflex-hosting-cli output should use multiline header and rows	8
-microsoft/azurelinux	18960	[ACL] CVM Support	8
-neomjs/neo	19052	neo.mjs\'s postinstall calls a devDependency, so consumer installs fail	8
-neomjs/neo	19126	The film\'s opening is one purposeful rearrangement — pop-out, drop zones, the native return, rails, a resize — and the picture sets the pace	8
-sonichi/sutando	4617	A skill manifest\'s AG2_CLOUD_ORIGIN repoints the whole process to a retired origin; marketplace.py reports a signed-in owner as \'Not signed in\'	8
+pingdotgg/t3code	13717	SSH environment stuck "Reconnecting" on Linux when Tailscale SSH requires interactive re-auth ("check" mode)	40
+kirodotdev/KiroCrew	13833	fleet_probe: `cmd=` cuts the joined command line at an in-argument separator, so it undercounts withheld tokens and can print a launcher the process never ran	40
+kirodotdev/KiroCrew	14106	messaging: QueueReceipt.opened_by is written but never read once every rule moved onto address_key	40
+kirodotdev/KiroCrew	14171	build(docker): install kiro-cli from the shared pin files, not latest/manifest.json	40
+kirodotdev/KiroCrew	14263	subagent_manager twin adopts process_identity.kill_verified_process and with_kill_failure	40
+kirodotdev/KiroCrew	14582	Re-attempt MCP server registration after a recoverable auth failure, so a later credential vend makes the server usable	40
+pingdotgg/t3code	13965	[Bug]: A thread whose agent leaves a dev server running stays "Monitoring" on desktop with no completion alert, while mobile reports it completed	40
+pingdotgg/t3code	13990	[Bug]: Preview tabs sometimes log "sandboxed_renderer.bundle.js script failed to run" (Electron #54149, fixed in 44.4.4)	40
+floci-io/floci	4516	ELBv2: ALB does not proxy WebSocket upgrades to instance/ip targets	38
+floci-io/floci	4541	[BUG] API Gateway v1: PutRestApi mode=merge is treated as overwrite and silently drops configuration	38
+raycast/extensions	31638	[Apple Reminders] ...Smart lists	35
+vllm-project/vllm-omni	8216	[Bug]: nightly CI,  tests/e2e/accuracy/omni_duplex_eval/test_omni_duplex_eval_ci.py::test_omni_duplex_eval_ci[three-stage-single-gpu], AssertionError: assert 1 in (0, -6)	34
+microsoft/vscode	338189	Agents: pending-approval session row grows to thousands of pixels when scrolling	32
+microsoft/vscode	337951	"Agent Debug Logs" setting is missing / not available to enable	32
+NousResearch/hermes-agent	123315	/skills write-approval subcommands (approve/pending/diff) produce no output on desktop chat and TUI	30
+NousResearch/hermes-agent	123523	[Bug]: hermes curator pin/unpin report success for a name no skill has; the real skill stays unpinned	30
+NousResearch/hermes-agent	123853	Discord: explicit @mention in a quote-reply never auto-threads (reply carve-out too broad)	30
+NousResearch/hermes-agent	123934	[Feature]: can add more tools like image search like a featrues ai can take screen shot of project and see it and like more qol featrues llike a improve for ui ux animation  ??	30
+NousResearch/hermes-agent	124371	[Bug]: Desktop drops single line breaks in assistant replies	30
+NousResearch/hermes-agent	124380	[Bug]: Kanban worker killed by reclaim or max-runtime (Windows, SIGKILL escalation) leaves its state.db session open	30
+NousResearch/hermes-agent	124540	ACP session/fork records no lineage (no parent_session_id / _branched_from), unlike /branch and the API fork	30
+NousResearch/hermes-agent	124841	[Feature]: Hebrew (עברית) locale for the Desktop app	30
+ggml-org/llama.cpp	29431	Misc. bug: Vulkan ARGSORT ne=[2048,1,1,1] only sorts half of the array on some devices	30
+apache/airflow	73739	Dag version inflation check runs against zip file instead of individual dags	29
+BasedHardware/omi	19039	[Bug]: Unhandled AttributeError on non-datetime started_at in Cloud Tasks merge worker	28
+BasedHardware/omi	19298	Bounty Proposal: Bulgarian (bg) Agent Quickstart Guide ( USD)	28
+open-metadata/OpenMetadata	34081	Playwright: contexts intermittently boot with a lost storageState token and land on the login screen	27
+camunda/camunda	64076	[Admin DS] Migrate login page to DS `UI/LoginScreen`	26
+apache/superset	44667	Table: a per-column formatting override cannot be returned to the chart-level setting	25
+dotnet/runtime	134737	[API Proposal]: Add boolean value overload for TagList.Add()	24
+omnigent-ai/omnigent	8370	[Feature] Make BoxLite managed box cpus and memory configurable	22
+zed-industries/zed	64819	gpui_macos: closing a window can abort on Touch Bar Macs (_NSTouchBarFinderObservation deregistration lands on an already-deallocated view)	18
+makecindy/cindy	5081	bug: 单张参考图超过 3MiB 时改图必失败，请求未发到上游	17
+vllm-project/semantic-router	4317	[Feature] Re-evaluate a context-gated decision when a transformation drops request demand below the band that selected it	17
+anomalyco/opencode	51452	server: drain replay of pending step fails with Mistral 400 (\'str object\' has no attribute \'items\') and retries every ~15s	16
+BerriAI/litellm	43285	[Bug]: llm_requests_hanging false positives under sustained load — completion-marker TTL (threshold+100) shorter than tracker TTL (1.5×threshold+60) with 20-oldest scan	16
+anomalyco/opencode	51432	desktop: render LaTeX math in messages	16
+kornia/kornia	4938	`NamedPose.from_rt` fails for a batched `(B>1, 3, 3)` rotation tensor and silently drops the batch dim of `(1, 3, 3)`	16
+google-deepmind/formal-conjectures	6622	Erdős Problem 994: status mismatch (repo=solved, erdosproblems.com=formally solved)	16
+monarch-initiative/dismech	12915	An evidence item cannot say which earlier study a restated figure comes from	16
+torch-spyre/torch-spyre	4901	[4895-F] Ingest contract: historical created_at + replay timestamp + backfill mark	16
+anomalyco/opencode	51344	[FEATURE]: Show which server a session tab belongs to	16
+anomalyco/opencode	51809	[Desktop 1.18.33] Assistant text not rendered when a turn includes tool/shell calls	16
+microsoft/onnxruntime	32804	[Build] Windows CUDA internal tests fail CMake generation due to a circular target dependency	15
+CherryHQ/cherry-studio	21079	[Bug]: Please bring back the delete chat history feature, why was it changed to archive? It\'s too hard to use	15
+twentyhq/twenty	26657	Multi-workspace: same email cannot register on a second workspace, but the first workspace’s password joins it	15
+wazuh/wazuh	39633	Syscollector emits no `package-installed` event when the packages inventory is at its limit, although it still emits `package-uninstalled`	15
+wazuh/wazuh	39658	Vulnerability Detection: each RHEL kernel CVE reported once per kernel subpackage (kernel, kernel-core, kernel-modules...)	15
+MillenniumDawn/Millennium-Dawn	4860	[FOCUS TREE] Economy Tree Expansion	14
+use-agent-os/agent-os	3434	[Bug]: rpc_trading.py _trading_allowances_list returns inconsistent response envelope between single-chain and all-chain queries	14
+microsoft/agent-framework	8760	[Feature]: BackgroundAgentsProvider cannot tell a task that is running on another process from one whose owner died	14
+objectstack-ai/objectui	10701	finding(types,docs): the \'agenda\' retirement citations objectui#5740 / objectui#5784 answer 404, and so do the landing PRs objectui#5782 / objectui#5806; shipped zod describe strings, JSDoc, schema-reference and three pending changesets cite them	14
+objectstack-ai/objectui	10659	finding(plugin-form,tests): the ModalForm edit case of `editDirtyPayload-10156` failed intermittently in CI with the typed value lost and the whole record sent — `ModalForm` carries none of the first-read gate objectui#10190 gave `DrawerForm`	14
+use-agent-os/agent-os	3432	[Bug]: redaction is scheme-allowlisted, so ws/ftp/ssh/smtp URL passwords reach the model verbatim	14
+frappe/frappe	43495	Shell and routes: the shell page renderer moves into frappe/shell/	14
+frappe/frappe	43500	Desk v2 guardrails: write the rules into ARCHITECTURE.md, AGENTS.md and the maps	14
+objectstack-ai/objectui	10951	finding(components): an `element:number` with neither `object` nor a `dataSource` binding now passes the html tier and paints an empty dash silently: PR objectui#10944 relaxed `object`\'s `required`, so no JSX gate reports the missing object	14
+astral-sh/ruff	28922	B018: useless-expression one more example to document	13
+maximhq/bifrost	7583	UI: LLM Logs stat cards truncate their trend figures at 1440px	13
+ramensoftware/windhawk-mods	5725	Add Taskbar Quick Pin Dock mod is ready-for-reviewer	13
+gke-labs/kube-agents	2023	litellm: silent router default_fallbacks to a smaller model corrupts delegated workers\' tool calls	13
+frappe/erpnext	59544	Depreciation Auto Posting for both the Finance Books, Double Depreciation Expense Posting.	13
+vercel/next.js	99348	WASM: codeFrameColumns rejects `color: boolean` and `maxWidth: undefined`, which the napi binding and Next\'s own callers accept	13
+ryanbr/noop	2473	Android: an HR-only night stages sessions and still produces no sleep, HRV or Charge	12
+ryanbr/noop	2492	Heart Rate in Workout View is using dates instead of time in X-Axis	12
+stablyai/orca	22910	[Bug]: Number followed by a dot mid-sentence renders as a nested list item in chat	12
+stablyai/orca	22928	Mobile: leaving a still-starting terminal can leave the desktop stuck in "Your phone is in control"	12
+stablyai/orca	22976	orchestration: a Run-bound lead never receives dispatch:<id> mail or replies	12
+stablyai/orca	23060	Aborted static web downloads retain file readers after server shutdown	12
+termux/termux-packages	32007	[Bug]: gdb 18.1 aarch64 internal-error box_one_message assertion failed	12
+apache/seatunnel	12502	[Bug][Connector-V2] Escape DuckDB catalog metadata lookup literals	12
+stablyai/orca	23501	[Feature]: Add Claude Code plugin marketplace manifest for bundled skills	12
+pollinations/pollinations	15529	[QUEST] List the hosted MCP servers in the MCP registry and directories	11
+sktime/sktime	11313	[ENH] HolidayFeatures: option to label holiday window days with their offset to the holiday	11
+dlang/dmd	23927	D should save fcw and mxcsr registers between fibers, it may lead to context loss and UB	11
+umontreal-diro/IFT3913	1199	Recherche de coéquipier	11
+pollinations/pollinations	15608	[App Submission] Pollinations for Godot 4	11
+pollinations/pollinations	15579	[QUEST] Pollinations add-on for Godot 4	11
+repowise-dev/repowise	2622	Codex function_call tool uses never reach the session decision miner, so the files they touch are never attributed	11
+scipy/scipy	26290	BUG: stats.ttest_ind / special.stdtr returns zero for a representable subnormal Student-t tail	11
+pollinations/pollinations	15612	[App Submission] Pollinations for Obsidian	11
+RPCS3/rpcs3	19591	[Regression] Mortal Kombat (BLUS30522) hard freeze ~60s after boot: audio port open/close storm + SPU stop-the-world livelock (#19467)	10
+alltheplaces/alltheplaces	19147	Coiff&Co	10
+alltheplaces/alltheplaces	19194	Discussion, US elementary/middle/high schools - NCES or district spiders?	10
+vorssaint/vorssaint-utils	2261	Animated companion state for idle Dynamic Island	10
+Emanuele-web04/synara	1341	Cursor (and probably Droid) re-opens the OAuth login page on every session start	9
+microsoft/aspire	20524	Replace project updates in `aspire update` with an agentic skill	9
+Pasta-Devs/Marinara-Engine	6678	[Issue]: Ruleset combat-on-a-board e2e sometimes ends without an outcome after 80 AI turns	9
+fossasia/eventyay	5932	Speaker custom questions missing from CSV Speaker Import column mapping	9
+TriliumNext/Trilium	11710	Add a Replace text action to the search notes function	9
+abue-ammar/tinycast	1167	[Bug]: Notes reopens right after closing when text is selected across multiple lines	9
+omacom/omarchy	13297	MacBookPro14,1: BCM4350 hybrid coexistence starves Bluetooth audio on 2.4 GHz Wi-Fi	9
+omacom/omarchy	13274	ASUS ExpertBook B9406CAA: PixArt touchpad I2C wedge freezes the desktop on linux 7.2.3	9
+vercel/eve	3831	Settling a workflow-tool run writes three full copies of session state (cancel/release steps)	9
+vllm-project/aibrix	2819	[Bug] Sync prefix indexer hashes every block of a BlockStored event against the first block\'s parent	9
+abue-ammar/tinycast	1185	[Feature]: Space and Tab should activate aliases	9
+aethersdr/AetherSDR	5994	Allow a smaller, adjustable S-meter applet size	9
+abue-ammar/tinycast	1202	[Extension]: IMDb Search	9
+JuliaLang/julia	63432	Lazy libblastrampoline: `ccall` into `Base.liblapack_name` jumps to a null pointer	9
+omacom/omarchy	13410	Fingerprint-unlock crash (pam_fprintd) leaves orphaned duplicate Quickshell bar, unmanageable by omarchy restart shell	9
+tgstation/tgstation	97974	Greenshift station goal supply packs not enabled for ordering like the report says they will be	9
+open-telemetry/opentelemetry-ebpf-instrumentation	3577	Dynamic probe instrumentation	8
+seaweedfs/seaweedfs	11490	s3: a bucket emptied with `rm --recursive` can become permanently undeletable when allowDeleteBucketNotEmpty=false	8
+AstrBotDevs/AstrBot	10242	[Bug] provider_settings.wake_prefix 未随 #9215 豁免 WebChat，WebChat 仍须带前缀才触发 LLM	8
+code-yeongyu/oh-my-openagent	8930	macOS background click: research restoring window-server order after delivery	8
+HalNagoyaRecTime/rectime-api	493	[Refactor] Master ImportのApplication→Infrastructure直接依存を解消する	8
+microsoft/PyRIT	2878	LiteLLMChatTarget does not flag or survive output-token truncation	8
+a2ui-project/a2ui	2822	[FEATURE]: Replace `Dynamic*` Schema Types with Standard JSON Schema Types in A2UI v1.0	8
+farion1231/cc-switch	7732	切换 Codex provider 后 CLI 模型列表不更新：app-server daemon 缓存旧 model catalog，需手动杀进程重启	8
+apache/shenyu	7351	[Task] Refactor AI Proxy into protocol, provider, and transport layers	8
+egovernments/DIGIT-DevOps	5250	Configure custom NACLs to replace default allow-all (ControlCase VPC-041)	8
+farion1231/cc-switch	7734	Codex 0.158 报 unknown configuration field `mcp_servers.*.type`：Codex 投影不应写入 `type`	8
