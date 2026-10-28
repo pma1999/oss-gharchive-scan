@@ -1,7 +1,7 @@
-generado_utc: 2026-10-28T11:32:00Z
-evento_mas_reciente_en_dataset: 2026-10-28 10:59:59
-evento_mas_reciente_global: 2026-10-28 10:59:59
+generado_utc: 2026-10-28T20:28:53Z
+evento_mas_reciente_en_dataset: 2026-10-28 19:59:56
+evento_mas_reciente_global: 2026-10-28 19:59:56
 filas_salud_repos: 400
-filas_issues_frescas: 186
-clickhouse_servidor: play-eu-v2 26.11.1.707 2026-10-28 11:32:00
-workflow_run: https://github.com/pma1999/oss-gharchive-scan/actions/runs/40680661001
+filas_issues_frescas: 192
+clickhouse_servidor: play-eu-v2 26.11.1.707 2026-10-28 20:28:53
+workflow_run: https://github.com/pma1999/oss-gharchive-scan/actions/runs/40763635640
