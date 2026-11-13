@@ -1,146 +1,161 @@
 repo_name	number	title	autores
-storytold/photocraft	13455	[Feature Request] Support importing Procreate brushes (.brush and .brushset)	37
-storytold/photocraft	13056	Mixer Brush toggle commands while another painting tool is selected (follow-up to #12308)	37
-sgl-project/sglang	49779	[Bug][DeepSeek-V4.1][SM120] candidate_topk_blocks: 0 does not disable the candidate scheme: layers 24-39 silently lose all top-k candidates	37
-storytold/photocraft	13012	Pen: the History step after Enter is "Work Path", the reference application shows "New Work Path"	37
-storytold/photocraft	13058	Magic Wand menu: Grow and Similar are missing from the recent commands (follow-up to #12167)	37
-storytold/photocraft	13207	BUG-DIRECT-SELECTION-SHIFT-DRAG-ANGLE	37
-storytold/photocraft	13387	[Feature Request] [PhotoCraft] Aggiunta di punti allo strumento penna curvatura	37
-storytold/photocraft	13426	[Feature Request] [PhotoCraft] Clipped Layer Selection & Toolbar Shapes Icon	37
+storytold/photocraft	13967	BUG-LAYERS-TO-FILES-TIFF-BMP-TARGA-KEEP-TRANSPARENCY	37
 storytold/photocraft	13748	MISSING-FEATURE-EXPORT-CLUT-DIALOG	37
+storytold/photocraft	13845	EPIC-SCRIPTS-BROWSE	37
+storytold/photocraft	13875	MISSING-FEATURE-FRAME-TOOL-CORNER-RADIUS	37
 storytold/photocraft	13496	Still on the histogram of a selected area in Curves and Levels	37
 storytold/photocraft	13478	RAW Develop crashes on Mac Intel	37
 storytold/photocraft	13561	Issue: Smart Object forgets perspective/distort bounding box on re-edit	37
-pingdotgg/t3code	34242	[Bug]: ACP Registry provider refresh keeps a stale model list (new Devin models never appear)	35
-pingdotgg/t3code	34160	[Bug]: Antigravity sent nothing for 15 minutes, so T3 Code stopped the turn and restarted the agent. Send a message to continue.	35
-pingdotgg/t3code	34009	[Bug]: Provider switches omit visible history from cancelled runs	35
-pingdotgg/t3code	34303	[Bug]: Managed Codex chats appear in ChatGPT desktop but cannot continue: openai_token_sharing unavailable	35
+sgl-project/sglang	49779	[Bug][DeepSeek-V4.1][SM120] candidate_topk_blocks: 0 does not disable the candidate scheme: layers 24-39 silently lose all top-k candidates	37
+storytold/photocraft	13455	[Feature Request] Support importing Procreate brushes (.brush and .brushset)	37
+storytold/photocraft	13426	[Feature Request] [PhotoCraft] Clipped Layer Selection & Toolbar Shapes Icon	37
+storytold/photocraft	13207	BUG-DIRECT-SELECTION-SHIFT-DRAG-ANGLE	37
+storytold/photocraft	13058	Magic Wand menu: Grow and Similar are missing from the recent commands (follow-up to #12167)	37
+storytold/photocraft	13056	Mixer Brush toggle commands while another painting tool is selected (follow-up to #12308)	37
+storytold/photocraft	13387	[Feature Request] [PhotoCraft] Aggiunta di punti allo strumento penna curvatura	37
+storytold/photocraft	13899	MISSING-FEATURE-IMAGE-PROCESSOR-RUN-ACTION	37
+pingdotgg/t3code	36296	[Bug]: New thread from a grouped repository opens the oldest sub-folder checkout, not the repository root	35
 pingdotgg/t3code	35903	[Bug]: Azure DevOps TF400733 throttling returns a successful diff with no hunks	35
 pingdotgg/t3code	35246	OpenCode 1.x subagents ignore Full access because the child\'s permission rules are applied after it starts	35
 pingdotgg/t3code	35724	[Bug]: No screen reader announcement when compaction starts at the "Everything" level	35
 pingdotgg/t3code	35734	[Bug]: Server fails to start when the workspace path contains a symlinked home directory	35
-tenstorrent/tt-metal	65234	### Component	34
-tangency-labs/solidcraft	14668	REVOLVE: operation failed	33
-tangency-labs/solidcraft	15226	Problem when mirroring a body extruded up to a surface	33
-tangency-labs/solidcraft	15905	solidcore: a round of fuzz body b27\'s edge 28 at r 1.94 or 1.95 fails with "negative interval" (status 1001)	33
-tangency-labs/solidcraft	15811	Performance: a fillet seeds the whole body\'s notification records thousands of times, so the readying costs O(body squared)	33
-tangency-labs/solidcraft	15481	Grafic driver crash when opening a new/existing file	33
-tangency-labs/solidcraft	15772	FILLET: operation failed	33
-tangency-labs/solidcraft	15773	**Fillet preview churns for minutes / fails on small edges near a cylinder-cut opening (v0.40.1)**	33
-microsoft/vscode	348092	Copilot harness ignores custom endpoint (BYOK) models and times out after repeated 503 errors	32
-microsoft/vscode	347503	Android keyboard	32
-microsoft/vscode	347796	Modern UI menu and action widget animations end with a one-pixel jump	32
-microsoft/vscode	347916	Nested chats should follow their target directory when selecting changes	32
+pingdotgg/t3code	34242	[Bug]: ACP Registry provider refresh keeps a stale model list (new Devin models never appear)	35
+pingdotgg/t3code	34303	[Bug]: Managed Codex chats appear in ChatGPT desktop but cannot continue: openai_token_sharing unavailable	35
+pingdotgg/t3code	34160	[Bug]: Antigravity sent nothing for 15 minutes, so T3 Code stopped the turn and restarted the agent. Send a message to continue.	35
+tangency-labs/solidcraft	16189	Part: When Sending to SLicer it includes the hidden object.	34
+tangency-labs/solidcraft	16200	solidcraft-cli snapshot: several views of one design in one call	34
+tangency-labs/solidcraft	16269	COMBINE: operation failed	34
+tangency-labs/solidcraft	15811	Performance: a fillet seeds the whole body\'s notification records thousands of times, so the readying costs O(body squared)	34
+tangency-labs/solidcraft	15481	Grafic driver crash when opening a new/existing file	34
+tangency-labs/solidcraft	15772	FILLET: operation failed	34
+tangency-labs/solidcraft	15773	**Fillet preview churns for minutes / fails on small edges near a cylinder-cut opening (v0.40.1)**	34
+tangency-labs/solidcraft	15905	solidcore: a round of fuzz body b27\'s edge 28 at r 1.94 or 1.95 fails with "negative interval" (status 1001)	34
+tangency-labs/solidcraft	15226	Problem when mirroring a body extruded up to a surface	34
+tenstorrent/tt-metal	65234	### Component	33
+ClickHouse/ClickHouse	131391	`INSERT` into a streaming table whose destination is missing: `RabbitMQ` hangs and can\'t be killed, `NATS` JetStream and `Kafka` silently lose the rows	32
+ClickHouse/ClickHouse	131423	`RENAME DATABASE` on a `DataLakeCatalog` database fetches metadata of every catalog table and fails on any unreadable table	32
+microsoft/vscode	347503	Android keyboard	31
+microsoft/vscode	347796	Modern UI menu and action widget animations end with a one-pixel jump	31
+microsoft/vscode	347916	Nested chats should follow their target directory when selecting changes	31
+microsoft/vscode	348092	Copilot harness ignores custom endpoint (BYOK) models and times out after repeated 503 errors	31
 grafana/grafana	137538	Decide how Core knows the Assistant is visible and which chat to continue	30
 grafana/grafana	137726	Plugins: Invalidate API discovery when plugins change	30
-zephyrproject-rtos/zephyr	125498	drivers: modem: hl78xx: close() leaks the socket slot of an unconnected stream socket, and failure paths free a slot the application still holds	28
 kirodotdev/KiroCrew	36615	Desktop: undoing a large paste shifts the chat column up and breaks window dragging	27
-kirodotdev/KiroCrew	36531	KAS: a shell command batched with a file write can run before the write finishes	27
-kirodotdev/KiroCrew	34784	Knowledge: deleting a large source fails with "too many SQL variables"	27
-kirodotdev/KiroCrew	34623	kirocrew learn remove misses a lesson the learn_remove tool removes (raw query vs sanitized rule)	27
-kirodotdev/KiroCrew	34681	After the gateway restarts, the sign-in error is a raw browser fetch error. It does not say what happened or what to do	27
-kirodotdev/KiroCrew	35591	Setting to turn off the two-finger trackpad swipe that opens the chat side panel	27
+kirodotdev/KiroCrew	36651	main red: test_every_shared_rule_has_an_ultra_counterpart_or_a_named_gap fails on goal_plan	27
 kirodotdev/KiroCrew	35037	spawn_run: give a delegated worker its own git worktree, as crewmates already get	27
 kirodotdev/KiroCrew	35436	Flaky: new-session-draft-carry.spec.ts background create in flight spec passes only on retry	27
+kirodotdev/KiroCrew	35591	Setting to turn off the two-finger trackpad swipe that opens the chat side panel	27
 kirodotdev/KiroCrew	36383	Hindi UI: \'crew\' stays in Latin letters in dozens of strings while most say \'क्रू\'	27
 kirodotdev/KiroCrew	35843	auto-improvement app suite fails alone: test imports test/stray_line_helpers by bare name	27
 kirodotdev/KiroCrew	35988	MCP apply: a change that is not an object answers 500	27
 kirodotdev/KiroCrew	36463	Dev Fleet: keep Restore installed build when worktree discovery fails	27
-elastic/elasticsearch	165567	ES|QL: EQL source command cross-cluster status, skip_unavailable and test coverage	26
+kirodotdev/KiroCrew	36531	KAS: a shell command batched with a file write can run before the write finishes	27
+zephyrproject-rtos/zephyr	125498	drivers: modem: hl78xx: close() leaks the socket slot of an unconnected stream socket, and failure paths free a slot the application still holds	27
 elastic/elasticsearch	165591	[CI] ExchangeServiceTests testSourcesFinishedUnregistersSink failing	26
+elastic/elasticsearch	165567	ES|QL: EQL source command cross-cluster status, skip_unavailable and test coverage	26
+elastic/elasticsearch	166001	[CI] StatelessRecoveryMetricsIT testRecoveryMetricPublicationOnIndexingShardRelocation failing	26
 t8y2/dbx	14767	[Feature] 相同的查询 只是条件不同，可以锁定返回的列位置	24
-ydb-platform/ydb	59155	Mute ydb/tests/compatibility/topics/test_direct_read.py.TestTopicDirectReadMixedCluster.test_direct_read_mid_blob_survives_tablet_move[mixed_prestable-27-1-1_and_stable-26-4-1] in main	23
-storytold/pdfcraft	7010	Visual glitch in split view	22
-storytold/pdfcraft	7019	XFA: resolveNode(\'Table1._Row1\') does not return the row instance manager	22
 storytold/pdfcraft	7181	Add PDF preview function in preview column Explorer for WIndows version.	22
-floci-io/floci	8033	[FEAT] SNS: trust FLOCI_TLS_EXTRA_CA_PATH for HTTPS subscriptions	21
+storytold/pdfcraft	7019	XFA: resolveNode(\'Table1._Row1\') does not return the row instance manager	22
+ydb-platform/ydb	59155	Mute ydb/tests/compatibility/topics/test_direct_read.py.TestTopicDirectReadMixedCluster.test_direct_read_mid_blob_survives_tablet_move[mixed_prestable-27-1-1_and_stable-26-4-1] in main	22
+storytold/pdfcraft	7010	Visual glitch in split view	22
+BerriAI/litellm	51627	[Bug]: deployment_key_to_vertex_credentials is never unregistered when use_in_pass_through is disabled — Vertex pass-through credentials persist until process restart	21
+BerriAI/litellm	51171	[Feature]: Add an option to forward request params._meta from client to upstream MCP servers on tools/call	21
+BerriAI/litellm	51389	[Bug]: Shared YAML model_info alias causes cross-model metadata contamination and incorrect spend calculation	21
+BerriAI/litellm	51207	[Bug]: redis-semantic cache can\'t start with a Redis user that excludes dangerous commands, because the Docker image ships redisvl 0.4.1	21
 BerriAI/litellm	51391	[Feature]: Cursor CLI subscription passthrough	21
 storytold/vectorcraft	7023	3D Extrude & Bevel: a farther wall can be drawn over a nearer face	21
-BerriAI/litellm	51389	[Bug]: Shared YAML model_info alias causes cross-model metadata contamination and incorrect spend calculation	21
-BerriAI/litellm	50911	[Bug]: /v1/mcp/server/{server_id} works the servers UUID, half works with an alias	21
-BerriAI/litellm	51171	[Feature]: Add an option to forward request params._meta from client to upstream MCP servers on tools/call	21
-BerriAI/litellm	51207	[Bug]: redis-semantic cache can\'t start with a Redis user that excludes dangerous commands, because the Docker image ships redisvl 0.4.1	21
+floci-io/floci	8033	[FEAT] SNS: trust FLOCI_TLS_EXTRA_CA_PATH for HTTPS subscriptions	20
 agentic-os-org/ANOLISA	9882	test(sec-core): handle ESRCH in gateway cleanup assertions	19
-Expensify/App	106527	Investigate workflow job failing on main: test / test (job 6)	18
 career-ops-hq/career-ops	6906	bug(providers): greenhouse, ashby and lever return [] for a response that is not a board, so a broken board reads as "no open roles"	17
 career-ops-hq/career-ops	7015	Feature: per-source funnel report, so users can see which scan source leads to interviews	17
 ggml-org/llama.cpp	32152	Misc. bug: plx-decider detection matches non-Qwen3.5 models by file names only, blocks conversion	17
+swiftlang/swift	94292	LoadableByAddress miscompiles @out return extracted from a single-element labeled enum case under -O / -Osize (dealloc_stack before copy_addr)	16
+ROCm/aiter	7778	[Issue]: gemm_afp4wfp4 preshuffled split-K raises KeyError NUM_BUFFERS on gfx1250	16
+open-metadata/OpenMetadata	37767	Preserve randomizedSample when resolving profiler sampling configuration	16
 storytold/wordcraft	6237	DOCX on macOS: 「游明朝」 / "Yu Mincho" runs fall back to Shippori Mincho although YuMincho is installed (游ゴシック → YuGothic already works)	16
-storytold/wordcraft	6398	Not able to paste on multiple column/row	16
 storytold/wordcraft	6255	Compare: section header-reference changes are invisible, a deleted section\'s header survives, and a title-page header part is dropped	16
 storytold/wordcraft	6310	[Bug Report] [WordCraft] Keyboard navigation does not work in the context menu opened with Shift + F10	16
-thedotmack/claude-mem	5913	[Integration] Add Dify support	16
+storytold/wordcraft	6398	Not able to paste on multiple column/row	16
 thedotmack/claude-mem	5908	[Integration] Add AutoGen support	16
-open-metadata/OpenMetadata	37767	Preserve randomizedSample when resolving profiler sampling configuration	16
-ROCm/aiter	7778	[Issue]: gemm_afp4wfp4 preshuffled split-K raises KeyError NUM_BUFFERS on gfx1250	16
-stablyai/orca	41371	[Feature]: Option to disable "Enter to send" in Native Chat (Enter = newline, Cmd/Ctrl+Enter = send)	15
-stablyai/orca	41251	[Feature]: Setting to open links as a tab instead of a split	15
-stablyai/orca	41352	[Bug]: Paste cancelled: terminal focus changed before paste started.	15
-stablyai/orca	40926	[Bug] Claude login completed, but Orca could not resolve the account email.	15
-stablyai/orca	41076	[Feature]: `orca agent launch` — per-launch env, tab title and prompt file, so wrappers don\'t have to fall back to `terminal create --command`	15
+thedotmack/claude-mem	5913	[Integration] Add Dify support	16
 camunda/camunda	69165	Validate that all values of an IN variable filter resolve to the same type	15
-keycloak/keycloak	54998	Should save several allowed Kerberos realms test times out	15
-stablyai/orca	41797	Merged-workspace notice: UX polish follow-ups (from #41200 UX review)	15
-stablyai/orca	41771	[Bug]: Codex orchestration worker reopen strips Full access and blocks orchestration check	15
-openobserve/openobserve	16668	RBAC: Traces service graph requires GET access to all trace streams	14
-yetone/magpie	6057	[Feat]供应商支持不自动添加到路由组	14
-yetone/magpie	6101	redact: a URL password with a raw @ is masked only up to its first @	14
-yetone/magpie	6106	[Bug] Windows: 最小化后台运行一段时间后，点托盘打开的界面全白（轻量模式释放并重建主窗口后，0.1.3705）	14
-makecindy/cindy	10349	iOS 26.1 伙伴私聊顶栏：近况和设置按钮被收进「…」，点击无反应	14
-yetone/magpie	6467	gui tests: old-webkit red on main 92bce5c72: appearance.js (a65dade2e) isn\'t in the list of scripts loaded on demand	14
 makecindy/cindy	9924	伙伴之间发送消息后，发送方无法得知送达和回复情况	14
 makecindy/cindy	10161	Git 安全快照在大工作目录下反复超预算，快照超时错误未被降级导致回合被标记为「回复未完成」	14
-kestra-io/kestra	22510	Polling trigger stays locked forever when the worker\'s job stream is closed by gRPC GOAWAY (`max_age`) during an evaluation	14
-makecindy/cindy	10247	消息里同时有指令和引用/日志/代码时，整条指令被当成粘贴内容而不执行	14
-yetone/magpie	6450	[Bug] Memory 提取遇到 Responses 指令兼容问题时静默返回 0 条，并把会话标记为已处理	14
-makecindy/cindy	10209	bug: 任务导入把 Codex 状态库 cwd 为空的线程合并进「~」分组，导入后落在用户主目录	14
-ai-dynamo/dynamo	18661	[BUG]: Offline replay prices a fitted AISimulate model\'s mixed passes as a prefill plus a separate decode	14
-yetone/magpie	6362	建议将客户端显示名称首字母大写	14
+stablyai/orca	42113	[Feature]: Split chats from different folders side by side in one window	14
 ai-dynamo/dynamo	18635	refactor(global-router): remove the copied HTTP server crate from Global Discovery	14
-langgenius/dify	46243	[Refactor/Chore] Reuse one HTTP client for enterprise API calls instead of building one per call	13
-nwverse/persona	6653	Inbox grouping: messages joining an existing event no longer overwrite its title, summary and tier	13
-nwverse/persona	4336	computer-use: refuse to operate macOS\'s permission prompts and System Settings	13
-mastra-ai/mastra	30050	[BUG] /api/openapi.json describes request bodies and params as parsed output, not as the client sends them	13
-mastra-ai/mastra	30149	[BUG] CachingPubSub cache keys have no hash tag, so RedisServerCache.listPushIndexed always falls back on Redis Cluster	13
+makecindy/cindy	10209	bug: 任务导入把 Codex 状态库 cwd 为空的线程合并进「~」分组，导入后落在用户主目录	14
+makecindy/cindy	10247	消息里同时有指令和引用/日志/代码时，整条指令被当成粘贴内容而不执行	14
+stablyai/orca	41797	Merged-workspace notice: UX polish follow-ups (from #41200 UX review)	14
+stablyai/orca	41771	[Bug]: Codex orchestration worker reopen strips Full access and blocks orchestration check	14
+ai-dynamo/dynamo	18661	[BUG]: Offline replay prices a fitted AISimulate model\'s mixed passes as a prefill plus a separate decode	14
+makecindy/cindy	10349	iOS 26.1 伙伴私聊顶栏：近况和设置按钮被收进「…」，点击无反应	14
+stablyai/orca	41076	[Feature]: `orca agent launch` — per-launch env, tab title and prompt file, so wrappers don\'t have to fall back to `terminal create --command`	14
+stablyai/orca	41352	[Bug]: Paste cancelled: terminal focus changed before paste started.	14
+stablyai/orca	40926	[Bug] Claude login completed, but Orca could not resolve the account email.	14
+stablyai/orca	41251	[Feature]: Setting to open links as a tab instead of a split	14
+stablyai/orca	41371	[Feature]: Option to disable "Enter to send" in Native Chat (Enter = newline, Cmd/Ctrl+Enter = send)	14
+nwverse/persona	6738	Keep the sidebar history row composable slots last to unblock scripts CI	13
+nwverse/persona	6783	iOS UI test: TodoStageBarUITests\' scroll turns the Due date wheel in Japanese at AX5	13
+nwverse/persona	6786	Bound hub read-loop and shutdown handover waits	13
 langgenius/dify	46055	Google Drive file selection is not shown in knowledge pipeline test runs	13
-nwverse/persona	4328	iOS: the terminal over a session page cannot be closed when the session isn\'t running, and offers no way to resume it	13
-nwverse/persona	3822	Tasks: a brief frozen at dispatch (the owner\'s own words, acceptance criteria, expected time) that completion, hand-overs and reports are held to	13
-nwverse/persona	3906	Android: background diagnostics exit record count ignores English plurals	13
-nwverse/persona	4517	Assistant CLI resume still sets CLAUDE_CONFIG_DIR empty in its shell prefix, and a recorded profile can lack the transcript	13
-nwverse/persona	4641	Android: approve permission requests that need fields filled in (the fields form, Deny and Fill In & Allow)	13
-nwverse/persona	4420	Outside Claude sessions are titled by Claude Code\'s derived name (<dir>-<hex>)	13
+mastra-ai/mastra	30050	[BUG] /api/openapi.json describes request bodies and params as parsed output, not as the client sends them	13
 nwverse/persona	4626	iOS, web: delete a message that never reached the hub from its long-press menu	13
+nwverse/persona	4336	computer-use: refuse to operate macOS\'s permission prompts and System Settings	13
+mastra-ai/mastra	30149	[BUG] CachingPubSub cache keys have no hash tag, so RedisServerCache.listPushIndexed always falls back on Redis Cluster	13
+nwverse/persona	4517	Assistant CLI resume still sets CLAUDE_CONFIG_DIR empty in its shell prefix, and a recorded profile can lack the transcript	13
+nwverse/persona	4328	iOS: the terminal over a session page cannot be closed when the session isn\'t running, and offers no way to resume it	13
+nwverse/persona	4420	Outside Claude sessions are titled by Claude Code\'s derived name (<dir>-<hex>)	13
+nwverse/persona	4641	Android: approve permission requests that need fields filled in (the fields form, Deny and Fill In & Allow)	13
 nwverse/persona	4929	Assistant: suggest a standing rule after the owner gives the same answer three times	13
 nwverse/persona	5314	Web chat: cindy\'s message action bar, only on a turn\'s last reply	13
 nwverse/persona	5422	test_apple_comments fails: Chinese text in a MinutesCardsUITests doc comment (#5398)	13
+UMSSY/umssy-app	2142	HU-15 Notificación por cambio de estado de postulación	13
+UMSSY/umssy-app	2165	Frontend: [H22-02] Hora de fin cada 1 h 30 y vista previa de los bloques	13
+yetone/magpie	6450	[Bug] Memory 提取遇到 Responses 指令兼容问题时静默返回 0 条，并把会话标记为已处理	13
 block/buzz-app	3371	[Bug] ~45% GPU load while Buzz is idle in the background (Intel MacBook Pro)	13
 nwverse/persona	5804	iOS and Android: draw the briefing\'s recommended-setup block	13
 nwverse/persona	5991	Knowledge search returns chats\' ingestion receipts instead of messages	13
 nwverse/persona	6048	Meeting rooms are listed and named as Agent sessions (room rows aren\'t counted as the assistant\'s)	13
 nwverse/persona	6072	iOS: StateNamesTests fails on main, the code review\'s "Viewed" says the state name 已看	13
-nwverse/persona	6270	Prompt language: MCP prompt descriptions	13
 storytold/filmcraft	4730	Make the Render Faster	13
-UMSSY/umssy-app	2165	Frontend: [H22-02] Hora de fin cada 1 h 30 y vista previa de los bloques	13
-UMSSY/umssy-app	2142	HU-15 Notificación por cambio de estado de postulación	13
-storytold/effectcraft	3579	LUT and OCIO files that failed to read stay failed after a permissions-only fix	12
-storytold/effectcraft	3451	Importing a 0.23.1 project clears its frozen Object Matte after ID remap	12
-open-telemetry/opentelemetry-collector-contrib	52972	[pkg/ottl] Function readme errors (1/3)	12
-vllm-project/semantic-router	6130	[Docs] Fallback per_attempt_timeout and total_timeout do not bound the first attempt	12
-frappe/frappe	47313	Automation engine: a slow action blocks every other flow in the same drain	12
+nwverse/persona	6270	Prompt language: MCP prompt descriptions	13
+yetone/magpie	6362	建议将客户端显示名称首字母大写	13
+langgenius/dify	46243	[Refactor/Chore] Reuse one HTTP client for enterprise API calls instead of building one per call	13
+nwverse/persona	6653	Inbox grouping: messages joining an existing event no longer overwrite its title, summary and tier	13
+yetone/magpie	6467	gui tests: old-webkit red on main 92bce5c72: appearance.js (a65dade2e) isn\'t in the list of scripts loaded on demand	13
+openobserve/openobserve	16668	RBAC: Traces service graph requires GET access to all trace streams	13
+yetone/magpie	6057	[Feat]供应商支持不自动添加到路由组	13
+yetone/magpie	6101	redact: a URL password with a raw @ is masked only up to its first @	13
+yetone/magpie	6106	[Bug] Windows: 最小化后台运行一段时间后，点托盘打开的界面全白（轻量模式释放并重建主窗口后，0.1.3705）	13
 flutter/flutter	196344	Text input PRs not always auto-labeled as `a: text-input`	12
 frappe/frappe	47021	CRM Forms — Build: the Forms list has one header row	12
-omnigent-ai/omnigent	13778	[Bug] codex-native specs ignore permission_mode, so workers can\'t run in Approve for me	12
-NVIDIA/OpenShell	5491	bug(kubernetes): a ResourceQuota, LimitRange or missing StorageClass blocking the workspace PVC leaves the sandbox in Provisioning for 300 s with an unrelated message	12
+vllm-project/semantic-router	6434	[Bug] Buffered OpenAI Responses replies with a summary-less reasoning item fail with empty_output_item (502)	12
 NVIDIA/OpenShell	5505	feat(observability): export shared-supervisor traces and OCSF logs via OTLP	12
-sgl-project/sglang-omni	3893	[Voxt] Allow Transcribe clean-up to be enabled or disabled per app group	11
-openchamber/openchamber	6773	[Feature] Load server-managed user CSS in web and desktop clients	11
-anomalyco/opencode	63758	[FEATURE]: TUI: always-visible "background work running" notice attached to the prompt	11
-cheaper-inference/OmniRoute	19730	Combo fallback fails for Responses clients: compaction items rejected by chat-completions upstreams (400 unsupported_feature)	11
-dsx-ai-factory/infra-controller	9099	Reduce repeated host setup in SPDM cancellation tests	11
+NVIDIA/OpenShell	5491	bug(kubernetes): a ResourceQuota, LimitRange or missing StorageClass blocking the workspace PVC leaves the sandbox in Provisioning for 300 s with an unrelated message	12
+omnigent-ai/omnigent	13778	[Bug] codex-native specs ignore permission_mode, so workers can\'t run in Approve for me	12
+frappe/frappe	47313	Automation engine: a slow action blocks every other flow in the same drain	12
+storytold/effectcraft	3451	Importing a 0.23.1 project clears its frozen Object Matte after ID remap	12
+storytold/effectcraft	3579	LUT and OCIO files that failed to read stay failed after a permissions-only fix	12
+lingdojo/kana-dojo	34053	[good first issue, hacktoberfest] 🌸 Add new Japan Fact 2676 (good-first-issue)	11
+storytold/cadcraft	3128	Windows controls are barely visible	11
 elie222/rakazo	4216	Deleted-Space fallback can resume notifications for a Space the user has already navigated away from	11
-gke-labs/kube-agents	5555	🔴 main is broken: A2A Module Tests	11
+dsx-ai-factory/infra-controller	9099	Reduce repeated host setup in SPDM cancellation tests	11
 gke-labs/kube-agents	5449	🎲 flaky check: Python Unit Tests: test_credential_proxy.ThreadCapTest	11
+gke-labs/kube-agents	5555	🔴 main is broken: A2A Module Tests	11
 gke-labs/kube-agents	5643	onboarding: one claim file for the first-run report\'s delivery, in place of the claiming marker	11
+anomalyco/opencode	63758	[FEATURE]: TUI: always-visible "background work running" notice attached to the prompt	11
+anomalyco/opencode	63764	agent: subagent (Task tool) returns prematurely in feature workflow	11
+anomalyco/opencode	63798	/undo puts a slash command\'s expanded template back in the prompt	11
+lingdojo/kana-dojo	34050	[good first issue, hacktoberfest] 🥢 Add new Example Sentence 711 (good-first-issue)	11
+NotRexed/Hookshot	2221	Camera controls not working	11
+NotRexed/Hookshot	2344	A Walk key for keyboard players (the movement keys can only run)	11
+anomalyco/opencode	63442	tui: allow pinning sessions in session list	11
+anomalyco/opencode	63384	rpc: experimental.browser/attach hangs indefinitely causing desktop app session timeouts	11
+anomalyco/opencode	63457	[FEATURE]: Support GitHub oauth expiring tokens	11
+apache/paimon	11115	[Bug] NULL comparisons fail when null-count statistics are unavailable	11
+apache/doris	70489	[Bug] (be) Storage Top-N over a rowset with overlapping segments fails with E-7412 when the scan has virtual columns	11
+apache/shenyu	8457	[Feature][AI Proxy] Register Anthropic Messages and Gemini protocol converters	11
 dsx-ai-factory/infra-controller	9148	fix(rest-api): declare repeatable GET query parameters as arrays	11
 elie222/rakazo	4503	Automatic bot mentions rewrite Markdown code spans and longer fences	11
 sgl-project/sglang-omni	3916	[Voxt] Strict shortcuts switch is hidden below the shortcut table in Settings → Shortcuts	11
@@ -148,59 +163,58 @@ PioneerAIAcademy/cowork-genealogy	4513	[feedback] 2026-11-12T16:35Z	11
 apache/doris	70528	[Feature Request] Provide diagnosis and safe recovery for VERSION_ERROR in storage-compute separated clusters	11
 NotRexed/Hookshot	3036	Blurry image on fullscreen mode	11
 gke-labs/kube-agents	5785	test: keep unit tests from running the real gcloud with the developer\'s login	11
-NotRexed/Hookshot	1926	Make the hookshot customizable with Nvidia app	11
-NotRexed/Hookshot	2221	Camera controls not working	11
-NotRexed/Hookshot	2344	A Walk key for keyboard players (the movement keys can only run)	11
-anomalyco/opencode	63442	tui: allow pinning sessions in session list	11
-anomalyco/opencode	63457	[FEATURE]: Support GitHub oauth expiring tokens	11
-apache/doris	70489	[Bug] (be) Storage Top-N over a rowset with overlapping segments fails with E-7412 when the scan has virtual columns	11
-anomalyco/opencode	63384	rpc: experimental.browser/attach hangs indefinitely causing desktop app session timeouts	11
-apache/paimon	11115	[Bug] NULL comparisons fail when null-count statistics are unavailable	11
-apache/shenyu	8457	[Feature][AI Proxy] Register Anthropic Messages and Gemini protocol converters	11
-shopware/shopware	22890	Store API order: `paymentChangeable` is true as soon as one promotion has no payment-method rule, so a payment-bound discount survives a payment change	10
-pollinations/pollinations	19635	[App Submission]	10
-pollinations/pollinations	19645	Community model sdxl-lightning-free lists /v1/images/edits but ignores the input image	10
+sgl-project/sglang-omni	3893	[Voxt] Allow Transcribe clean-up to be enabled or disabled per app group	11
+openchamber/openchamber	6773	[Feature] Load server-managed user CSS in web and desktop clients	11
+microsoft/onnxruntime	34202	[Web] Let `env.wasm` pass a precompiled module to the runtime (`instantiateWasm`)	11
+melgarafael/DeskcommCRM	4575	Inbox: clicar na mensagem citada (resposta marcada) deve levar até a mensagem original	10
 kvcache-ai/Mooncake	5440	[RFC]: [Store] Coalesce fragmented multi-buffer gets and puts on NVLink replicas through a GPU staging buffer	10
+QwenLM/qwen-code	16875	Let the model run dynamic workflows in the background in ACP clients (Web Shell)	10
+JuliaLang/julia	64893	`@assume_effects :nortcall` errors	10
+QwenLM/qwen-code	17192	deflake: packages/cli/src/serve/managed-runtime-terminal.test.ts › ManagedRuntimeTerminals > replays scrollback on reconnect of the same Session	10
 keiyoushi/extensions-source	21012	Source Request (EN): LGBToon	10
 keiyoushi/extensions-source	21018	Kagane existing library titles missing from search and not receiving new chapters	10
-erigontech/erigon	26214	execution/engineapi: TestWaitForResponseDoesNotCallBackAfterDeadline flakes on its 100 ms bound under -race	10
 yugabyte/yugabyte-db	37733	[DocDB] Remote bootstrap ships a bootstrap intent filter cutoff newer than its checkpoint: new replica loses a committed transaction	10
 yugabyte/yugabyte-db	37811	[xCluster] Automatic mode: CREATE TABLE AS over a PL/pgSQL variable that shadows a column gets a different column type on the target; replicated rows are corrupt	10
-JuliaLang/julia	64893	`@assume_effects :nortcall` errors	10
-QwenLM/qwen-code	16875	Let the model run dynamic workflows in the background in ACP clients (Web Shell)	10
-storytold/soundcraft	1514	adding audacity\'s stsff pad Add times stretch	9
-tangency-labs/solidcore	3253	STEP import: a whole-turn cone whose seam is a hair before a quarter line loses its hole (3888.0 mm³ read back for 3766.75)	9
-CherryHQ/cherry-studio	24394	[Bug]: Selecting CherryIN models (deepseek-v4.1-flash / agent/deepseek-v4-flash) in Work Chat persistently returns 400 "Model … is not available through the API gateway", misreported as "Response transmission interrupted, please check network stability"	9
-frappe/erpnext	66317	Split returns of one row move more stock than the row did when the ledger rounds each return row	9
+pollinations/pollinations	19635	[App Submission]	10
+pollinations/pollinations	19645	Community model sdxl-lightning-free lists /v1/images/edits but ignores the input image	10
+shopware/shopware	22890	Store API order: `paymentChangeable` is true as soon as one promotion has no payment-method rule, so a payment-bound discount survives a payment change	10
 brekkylab/backlot	1341	confluence: a content object\'s `_links` comes right after `title` or `space`, where real serves it last, after `_expandable`	9
-frappe/erpnext	65474	Auto-set batch ignores Default Sales UOM of a later row sent without uom	9
-frappe/erpnext	65575	Batch valuation counts an unconsolidated POS Invoice as stock out	9
-frappe/erpnext	65904	Production Plan becomes Material Requested on submit when all raw materials are in stock	9
-frappe/erpnext	66009	Pricing rule Min Amt is compared in the document currency, not the rule currency	9
-frappe/erpnext	65856	BOM form shows the wrong operating cost when "Set operating cost based on BOM Quantity" is on	9
-getsentry/sentry-javascript	26258	tanstackstart-react 11.10+: Sentry.init throws on Nitro server (GLOBAL_OBJ undefined in captureTracingEvents)	9
-frappe/erpnext	65862	Change Finished Item and Disassemble Order each ignore the qty already used by the other	9
-frappe/erpnext	65804	Open POS Invoices in another UOM reserve too little of a batch, so a Delivery Note picks it and fails	9
-frappe/erpnext	65921	Sales Order row can link a Blanket Order that does not contain its item	9
-frappe/erpnext	65598	Re-saving a draft Delivery Note from a Pick List moves its packed row to another warehouse but keeps the serial no	9
-manaflow-ai/cmux	41100	Re-land the chrome-layer colour check with measured colours (#41097 reverted)	9
+longbridge/nsh	1985	windows: Text an input method commits through TSF reaches the app only with the next key	9
 langchain-ai/docs	7631	[integration]: ChatLinkrra (langchain-linkrra)	9
-manaflow-ai/cmux	41481	cmux NIGHTLY build is failing on nightly-next	9
-manaflow-ai/cmux	40948	Chat selection popup: always show Ask in side chat, add Copy	9
-matrixorigin/matrixone	32529	[Bug]: Non-strict sql_mode still rejects out-of-range values (no clamp+warning)	9
-matrixorigin/matrixone	32583	[Bug]: Disk-cache read share charges failed reads as successful bytes	9
-matrixorigin/matrixone	32617	[Bug]: lockservice: mo_locks silently omits all but the first waiter	9
 longbridge/nsh	1640	Intl: Format dates in named time zones from optional zone data	9
 longbridge/nsh	1719	macos: A dialog that fades out flashes a flat panel without its glass and backdrop	9
-frappe/erpnext	66129	Asset Repair form shows the average rate for a consumed stock item, not the cost that submit books	9
-langfuse/langfuse	20149	bug(pricing): Bedrock in-Region and geographic Claude ids priced at the global rate (10% low)	9
-frappe/erpnext	66054	Subcontracting Order shows raw-material cost in the BOM currency when the BOM is in another currency	9
-CherryHQ/cherry-studio	24261	[Bug]: Assistant keeps asking for per-action permission confirmation (hundreds of prompts) with no way to stop it	9
+manaflow-ai/cmux	40948	Chat selection popup: always show Ask in side chat, add Copy	9
+manaflow-ai/cmux	41100	Re-land the chrome-layer colour check with measured colours (#41097 reverted)	9
+manaflow-ai/cmux	41481	cmux NIGHTLY build is failing on nightly-next	9
+matrixorigin/matrixone	32583	[Bug]: Disk-cache read share charges failed reads as successful bytes	9
+matrixorigin/matrixone	32617	[Bug]: lockservice: mo_locks silently omits all but the first waiter	9
+matrixorigin/matrixone	32529	[Bug]: Non-strict sql_mode still rejects out-of-range values (no clamp+warning)	9
 CherryHQ/cherry-studio	24183	[Feature]: Keep cross-session delivery results out of the human user message pool	9
+CherryHQ/cherry-studio	24261	[Bug]: Assistant keeps asking for per-action permission confirmation (hundreds of prompts) with no way to stop it	9
 OrcaSlicer/OrcaSlicer	17507	Orca Slicer 2.5.0 40ecc66f interface layer bug	9
-opengeos/RustGIS	1908	[Bug]: A tiled GeoTIFF whose overviews are stored smallest first keeps only the first one, so `cellSize` reads the full image	8
-opengeos/RustGIS	1901	KML: duplicate ExtendedData keys keep only the first value; a description field comes back renamed	8
-apache/beam	41251	[Feature Request]: SpannerIO ReadChangeStream: expose the real-time checkpoint interval as a public option (independent of withLowLatency)	8
+langfuse/langfuse	20149	bug(pricing): Bedrock in-Region and geographic Claude ids priced at the global rate (10% low)	9
+erigontech/erigon	26214	execution/engineapi: TestWaitForResponseDoesNotCallBackAfterDeadline flakes on its 100 ms bound under -race	9
+CherryHQ/cherry-studio	24394	[Bug]: Selecting CherryIN models (deepseek-v4.1-flash / agent/deepseek-v4-flash) in Work Chat persistently returns 400 "Model … is not available through the API gateway", misreported as "Response transmission interrupted, please check network stability"	9
+storytold/soundcraft	1514	adding audacity\'s stsff pad Add times stretch	9
+tangency-labs/solidcore	3253	STEP import: a whole-turn cone whose seam is a hair before a quarter line loses its hole (3888.0 mm³ read back for 3766.75)	9
+coder/coder	32192	Scoped tokens can\'t read or activate dormant workspaces	8
+frappe/erpnext	65474	Auto-set batch ignores Default Sales UOM of a later row sent without uom	8
+frappe/erpnext	65575	Batch valuation counts an unconsolidated POS Invoice as stock out	8
+frappe/erpnext	65598	Re-saving a draft Delivery Note from a Pick List moves its packed row to another warehouse but keeps the serial no	8
+frappe/erpnext	65856	BOM form shows the wrong operating cost when "Set operating cost based on BOM Quantity" is on	8
+frappe/erpnext	65862	Change Finished Item and Disassemble Order each ignore the qty already used by the other	8
+frappe/erpnext	65921	Sales Order row can link a Blanket Order that does not contain its item	8
+frappe/erpnext	66009	Pricing rule Min Amt is compared in the document currency, not the rule currency	8
+frappe/erpnext	65804	Open POS Invoices in another UOM reserve too little of a batch, so a Delivery Note picks it and fails	8
+frappe/erpnext	65904	Production Plan becomes Material Requested on submit when all raw materials are in stock	8
+monarch-initiative/dismech	17394	Curate postinfectious cerebellitis (MONDO:0850107)	8
 Altinn/altinn-studio	21883	Studio lets a code list that is in use be deleted or renamed in a v9 app	8
 activepieces/activepieces	17414	AIPages Discovery: Boost your tool with AUS micro-payments on Base	8
 apache/beam	41224	[Feature Request]: [Streaming/YAML] Add declarative IntervalJoin composite transform with watermark skew circuit breaker	8
+BasedHardware/omi	25237	firestore_readiness red: composite index for feedback_events missing (deploy gate)	8
+opengeos/RustGIS	1901	KML: duplicate ExtendedData keys keep only the first value; a description field comes back renamed	8
+opengeos/RustGIS	1908	[Bug]: A tiled GeoTIFF whose overviews are stored smallest first keeps only the first one, so `cellSize` reads the full image	8
+frappe/erpnext	66129	Asset Repair form shows the average rate for a consumed stock item, not the cost that submit books	8
+apache/beam	41251	[Feature Request]: SpannerIO ReadChangeStream: expose the real-time checkpoint interval as a public option (independent of withLowLatency)	8
+frappe/erpnext	66054	Subcontracting Order shows raw-material cost in the BOM currency when the BOM is in another currency	8
+frappe/erpnext	66317	Split returns of one row move more stock than the row did when the ledger rounds each return row	8
