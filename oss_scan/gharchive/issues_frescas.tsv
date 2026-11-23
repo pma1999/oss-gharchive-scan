@@ -1,138 +1,146 @@
 repo_name	number	title	autores
-vllm-project/vllm	68938	[RFC]: Rank-local host backing and SM120 DCP for HiSparse	37
-storytold/photocraft	15935	PERF-TESTS-COMPOSE-THREAD-INDEPENDENCE-AND-SPLIT-TILING-LOOPS	35
-microsoft/vscode	349483	can\'t uninstall canvas plugin	29
-microsoft/vscode	349437	Agent Host: Self-hosted web UI for Agent Host (similar to code serve-web)	29
-microsoft/vscode	349210	Terminal: `-` in `terminal.integrated.wordSeparators` is not escaped, an out-of-order range throws and disables the terminal link handler	29
-microsoft/vscode	349248	Agent mode repeatedly executes the same workspace search in a loop ("Search for EventSource | /events | subscribe (")	29
-microsoft/vscode	349396	Jupyter notebook randomly fails to connect to a kernel	29
-tenstorrent/tt-metal	66695	[Blackhole] Multicast with path reservation is up to ~40% slower when the destination starts on L1 banks 25-28	27
-tenstorrent/tt-metal	66662	[tt-metal API] Host bfloat16 constructor rounds integers incorrectly near a midpoint	27
-nwverse/persona	11968	main: dsh.test.js ends with blank lines, so the PR watcher cannot bring stale PRs up to date (#11905)	23
-nwverse/persona	10778	Terminal dialogs with a > cursor and an arrow-key footer are not read as choices	23
-nwverse/persona	11058	iOS: the timer Live Activity\'s DEBUG sample exceeds ActivityKit\'s 4 KB and PhoneSystemToolsTests fails (after #7976)	23
-nwverse/persona	11055	Add an opt-in work management skill for to-dos, delegation and supervision	23
-nwverse/persona	10190	Web: a conversation created on another client doesn\'t appear in the sidebar\'s Recent until a reload	23
-nwverse/persona	10255	iOS: a row opened before the keyboard answers can leave Agents in a half-started search	23
-nwverse/persona	10453	Persona chat: switching to plain claude resumes in a managed provider\'s profile without sign-in	23
-nwverse/persona	10623	Direction notes: a task a leader plans itself starts without the notes	23
-nwverse/persona	11470	History reads of a session without a transcript: five small leftovers after #11454	23
-nwverse/persona	11714	test(assistant): mark quiet-patrol source conversations as resumable after #6806	23
-nwverse/persona	11772	Models: main chat on a runtime (DSH) shows "Provider missing or incompatible"	23
-nwverse/persona	10161	Assistant approvals: report every terminal outcome and preserve private clarification	23
-MetaMask/metamask-mobile	40127	[Bug]: personal_sign fails with -32602 on a network the dapp just added (regression since 8.18)	22
-storytold/pdfcraft	7876	[Bug Report] [PdfCraft] App simply won’t lunch or open	22
-storytold/pdfcraft	7730	Feature request: Accessibility Checker flags placeholder alternate text (file names, "Picture 1", single characters)	22
+elastic/kibana	306951	[Nightshift] Knowledge Indicator feature identification fails for sources without an @timestamp column	40
+sgl-project/sglang	52335	[Feature] Support microsoft/Aion-1.0-Instruct-2.3B	39
+storytold/photocraft	16366	Ctrl + T = wrong blending mode. Important for aligning layers	30
+microsoft/vscode	349805	Agent restarted HUN PROD mes-bridge container without approval	25
+microsoft/vscode	349644	replies to background-task notifications are never shown in the chat	25
+ClickHouse/ClickHouse	133673	Keeper: `CheckWatch` (`KeeperStorage::containsWatch`) ignores `session_id` and returns `ZOK` for watches owned by other sessions	25
+ClickHouse/ClickHouse	133513	Decorrelated scalar aggregate subquery is computed for all keys of the inner table, not only for the keys of the outer query	25
+ClickHouse/ClickHouse	133348	Float-literal fold ignores `Nullable` key: exact `count()` counts NULL rows	25
+nwverse/persona	13303	Assistant: snapshot watcher cancels an unanswered prepared approval	25
+nwverse/persona	13402	Extensions: scheduled jobs and per-extension notification categories	25
+nwverse/persona	13431	Voice: move full-duplex voice out of the core into its own module on every platform	25
+nwverse/persona	13522	Web sidebar By project: a section per computer with its projects inside, and same-named folders told apart	25
+nwverse/persona	13763	agy pane notice still points to herdr\'s integration instead of Persona\'s own agy hooks	25
+nwverse/persona	12665	Web sidebar By repo: one repository is drawn as two sections when a herdr workspace sits in it	25
+nwverse/persona	12785	Ratchets fail only when a count rises; lowering baselines becomes tidying anyone can run	25
+nwverse/persona	12826	Allow a custom CA bundle for extension marketplace HTTPS	25
+nwverse/persona	13053	feat(machines): add opt-in machine-ops skill and on-demand read-only ops MCP/CLI	25
+nwverse/persona	13151	Assistant: resuming a finished agent of another direction drops the lead task	25
+nwverse/persona	13164	Web: in Full page mode, Main Chat in the sidebar drops the Agent page opened from the conversation	25
+zephyrproject-rtos/zephyr	126815	[Backport v3.7-branch] Failed to backport #114459	24
+tenstorrent/tt-metal	66813	[LLK] Elementwise and UnaryDispatch LLK Test	24
+tenstorrent/tt-metal	66793	Save and Load Optimizer States with Checkpoints in Experimental Trainer	24
+tenstorrent/tt-metal	66695	[Blackhole] Multicast with path reservation is up to ~40% slower when the destination starts on L1 banks 25-28	24
+kirodotdev/KiroCrew	40893	Phone: Reveal in sidebar on a Bot\'s session opens the Sessions drawer on no row	22
+kirodotdev/KiroCrew	41021	Flaky: re-reads the record and the shell list when app_reload names this app (AppPage, Frontend Tests on Linux)	22
+kirodotdev/KiroCrew	41332	Tests: two more worker threads can resolve the real data home when a test body clears KIROCREW_HOME	22
+kirodotdev/KiroCrew	40413	hooks: warn_if_slow returns a bool nobody reads	22
+kirodotdev/KiroCrew	40683	macOS: the speech helper cannot be built when Command Line Tools are older than the selected Xcode	22
+kirodotdev/KiroCrew	40695	Edition company sign-in profile behind the crew_client preview	22
 kirodotdev/KiroCrew	40052	Windows: deleting a skill whose folder holds a read-only file fails with PermissionError and leaves the skill in place	22
 kirodotdev/KiroCrew	40072	Change-card value check skips a list setting\'s item_pattern	22
 kirodotdev/KiroCrew	40078	Memory: make kind routing, lesson fold and rule authority order default on	22
-kirodotdev/KiroCrew	39969	Hook continuation card repeats "hook" and looks like a retry	22
-kirodotdev/KiroCrew	39368	ci: try a parallel, rewrite-only assertion-rewrite prewarm before xdist starts (ship only if measured faster)	22
-kirodotdev/KiroCrew	39106	perf(security): span reader stays quadratic when every quoted $( ) body holds a heredoc	22
-kirodotdev/KiroCrew	39927	Windows: other staged-folder renames (plugin convert, appearance pack, plugin import, app restore) have no sharing-violation retry	22
-kirodotdev/KiroCrew	38813	Telegram, Discord and other non-Slack channels lead messages with emoji; use plain words	22
-BerriAI/litellm	53069	/v1/images/edits: response_format is passed to OpenAI for gpt-image models (400), and additional_drop_params leaks into the form body	21
-vllm-project/vllm-ascend	22345	[RFC]: Shared-PCP for Ascend: owner-sharded PCP KV with CANN VMM peer mapping	21
-ROCm/rocm-systems	16298	[rocjitsu] Add a daemon listing command	20
-storytold/wordcraft	7135	HTML import drops inline character borders and paragraph borders	18
-storytold/wordcraft	6992	Tab leader dot spacing: Word for Mac uses the exact advance, Word for Windows rounds to 600 dpi	18
-morluto/rea	12232	[Bug] inspect-native-initializers reports ordinary x86-64 and AArch64 objects as incomplete	17
-yugabyte/yugabyte-db	38492	[YSQL] REPEATABLE READ: foreign key insert against a unique constraint of a table created in the same transaction fails with a serialization error	17
-yugabyte/yugabyte-db	38528	[DocDB] CREATE UNIQUE INDEX fails with a false duplicate-key error when concurrent transactions DELETE a row and re-INSERT its value	17
-yugabyte/yugabyte-db	38648	[DocDB][xCluster] Deleted row comes back on the target after a late apply	17
-yugabyte/yugabyte-db	38716	[YSQL] After another session drops a temp table, the owning session keeps reading and writing it	17
-t8y2/dbx	15311	[Bug] unexpected message from server	17
-t8y2/dbx	15320	[Bug] 我在where语句中进行的筛选条件 为什么在下面这一个大的里面不展示呢，没有交互啊	17
-fleetdm/fleet	59200	GitOps: apple_business rejects "Unassigned" as a fleet	16
-fleetdm/fleet	59323	Add audit log activities for viewing host details and report results	16
-open-metadata/OpenMetadata	38327	Looker: lineage for derived tables whose SQL holds Liquid	16
-open-metadata/OpenMetadata	38024	[Detail Bug] Timescale: SQL injection via unvalidated queryStatementSource in Test Connection	16
-floci-io/floci	8947	[FEAT] cloudfront: multi-tenant distributions (connection groups and distribution tenants)	16
-floci-io/floci	8894	[BUG] PutMetricAlarm and AWS::CloudWatch::Alarm accept EvaluationInterval on an alarm with MetricName or Metrics	16
-Bike4Mind/bike4mind	8058	feat(skills): add free run with Turnstile, limits and admin settings	14
-stablyai/orca	45603	[Bug]: Commit diff tab loses scroll position on tab switch (inline view + word wrap)	14
-stablyai/orca	44309	[Bug]: Browser/terminal commands from a Chat UI session land in the focused workspace when cwd is outside every workspace	14
-stablyai/orca	44765	[Bug]: A turn\'s subagents fill the chat instead of staying under one closed row	14
-stablyai/orca	45456	[Feature]: Keep closed native chats under their workspace with an archive action	14
-stablyai/orca	44085	[Bug]: Blank browser tabs are titled "New Tab" in English in every UI language	14
-stablyai/orca	43789	[Feature]: Deselect the active workspace from a shortcut or the titlebar logo	14
-kubernetes-sigs/kueue	19080	🔍 CodeRabbit treats requests to open an issue as "@coderabbitai track"	14
-Azure/azure-rest-api-specs	48403	[aw] Failed jobs: Backlog Triage	14
-linuxfoundation/lfx-self-serve	5946	Knowledge gateway v0: the service, `lfxk` and its MCP server, proven locally and in CI	14
-makecindy/cindy	11551	维护者确认：PR #11473 设置页分组重构与主页用量入口（product / rules / arch 触发）	14
-omnigent-ai/omnigent	14401	[Feature] antigravity-native: in-session Web UI model selector via agy models and /model <slug>	14
-ROCm/aiter	8194	# [MoE tuner] --ep-size bypasses --swiglu_limit validation	14
-elie222/rakazo	5976	Update the self-hosted model steps now that models are found automatically	14
-elie222/rakazo	5449	[Bug]: Unnamed photos use .jpg even when the picker reports another image MIME type	14
-elie222/rakazo	5718	Per-run memory recall before history breaks the prompt cache on every run	14
-unslothai/unsloth	18221	[Feature] Computer use on Wayland (KDE Plasma, GNOME)	13
-storytold/filmcraft	5067	[Feature Request] [FilmCraft] filmcraft markers aren\'t interactive on timeline like premiere	13
-storytold/filmcraft	5021	Timeline: fx badge is drawn over clip names	13
-swiftlang/swift	94422	Optimizer destroys a `[weak self]` capture before an escaping closure is passed to a generic async function (use of destroyed weak, crash)	13
-camunda/camunda	70068	Purging RDBMS data can leave MySQL/MariaDB connections with foreign key checks disabled	13
-camunda/camunda	69862	MeteredCamundaClientExecutorService: job-handling executor metrics are dropped (meter ID collision with the scheduler)	13
-ai-dynamo/dynamo	19012	[BUG]: Mocker `--speedup-ratio` help says `0` means infinite speedup, but `0` runs at unscaled 1.0x timing	12
-ai-dynamo/dynamo	19014	[BUG]: FileStore::delete returns MissingKey for absent keys while EtcdStore and MemoryStore succeed	12
-ai-dynamo/dynamo	19252	[BUG]: Truthy scalar mm_processor_kwargs returns HTTP 500 instead of 4xx	12
-langgenius/dify	46660	[Bug] OpenAPI authentication crashes on MySQL-compatible backends: TypeError comparing naive expires_at with aware datetime	12
-PioneerAIAcademy/cowork-genealogy	4707	record_search calls every FamilySearch 403 a User-Agent fault and an unretried timeout retried; 40 searches ran into a service that answered none	12
-mvschwarz/openrig	3549	test: on Linux, tmux-server-selection fails when the resolved TMPDIR is 52 bytes or more, because its socket paths exceed the length limit	12
-l0ng-ai/openidea	4445	The method doRun() of type Db2Task must override or implement a supertype method	12
-l0ng-ai/openidea	4116	Closing an edited file silently discards changes when autosave is disabled	12
-l0ng-ai/openidea	4275	ClickHouse HTTP: connection test fails for accounts with readonly = 1	12
-flagos-ai/FlagGems	9491	[Bug][Enflame] add ignores inner stride for broadcast inputs (Int32 and Float32)	12
-NVIDIA/Megatron-LM	9645	Support model-specific mHC output contraction in HybridModel	12
-kubernetes/kubernetes	144363	Reserve capacity of pods being replaced during rolling updates so their replacement pods can reclaim it	12
-frappe/frappe	47880	Views — build: CRM sidebars with their own views	11
-shopware/shopware	23206	Generating a document file again fails with a TypeError when the invoice has a logo	11
-storytold/cadcraft	3281	How to bring back this File menu bar back. some how i disable cant able to bring back	11
-cheaper-inference/OmniRoute	20624	Auto combo latency strategy ranks only the primary by speed, not the fallback order	11
-cheaper-inference/OmniRoute	20503	PT/DE text in run-next.mjs and chatgpt-web-codex-mcp.mjs	11
-apache/doris	70797	[Feature][Paimon] Complete the Rust logical reader integration against paimon-rust 0.5.0	11
-envoyproxy/envoy	49438	Newer release available `openssl`: 4.1.0 (current: openssl-3.5.9)	11
-TensorBlock/awesome-mcp-servers	6352	Improve metadata: Kling AI MCP (China) — current repo, plugins and npm packages	10
-TensorBlock/awesome-mcp-servers	6466	Add MCP server: PulseLake Experience Ops	10
-longbridge/nsh	2326	linux: A touchpad fling glides short: the release velocity counts the pause before the stop event	10
+BerriAI/litellm	53356	[Bug]: lite credentials get/delete do not encode the name, so ? or # target another credential	20
+vllm-project/vllm-omni	10951	[Doc]: The motion transfer results are unstable in Ascend NPU	20
+ydb-platform/ydb	60451	Replication topic reader drops the cause of a failed consumer offset commit	19
+ydb-platform/ydb	60350	S3 AccessKey and SecretKey of a BlobDepot go to the BSC audit log, the BSC operation log page and the BlobDepot agent debug log in clear text	19
+storytold/wordcraft	7472	Tagged PDF flattens footnote and endnote bodies into ordinary paragraphs	18
+storytold/wordcraft	7507	DOCX Hebrew and Devanagari list labels render as ordinary decimals	18
+storytold/wordcraft	7230	RTF export flattens native equations to plain text	18
+storytold/wordcraft	7268	RTF export writes internal bookmark links as external fragment URLs	18
+storytold/wordcraft	7405	RTF conversion moves centered and right-aligned tables to the left	18
+storytold/wordcraft	7411	RTF conversion changes patterned cell shading to a solid fill	18
+yugabyte/yugabyte-db	38973	[DocDB] Flaky test: ExternalObjectLockTestOneTS.ReleaseBlocksUntilBootstrap is failing	18
+NVIDIA-NeMo/Gym	6596	feat(sandbox): support Docker disk limits or report unsupported requests explicitly	17
+DefiLlama/dimension-adapters	11238	rain-one: history not refilled after #10768 — fees 0 since 12 Sep 2026, and Jan–Apr 2026 far below on-chain	17
+morluto/rea	13690	refactor(apple): share readFatSliceHeaders between target resolver and inventory	17
+morluto/rea	13796	refactor(uefi): extract UefiScanContext from UefiImageScan	17
+morluto/rea	13275	[Design] Lazy per-family MCP composition, build-time compact schemas, and splitting the 1.3 MB analysisViewResult CLI chunk	17
+mccorvie/riemann-masullo	806	Prove `dSequenceMaximal_memLp` (Theorem A.5.3.7(2), p. 582)	15
+mccorvie/riemann-masullo	6523	`import all` wave 1: make the helpers of `Ch05_ThetaZSpaces/Sec4` that other files use public	15
+mccorvie/riemann-masullo	6558	`import all` wave 2, level 1: replace the `import all` lines of `Ch10_TraceSpectral/Sec2_SpectralProof_Printed` by plain imports	15
+mccorvie/riemann-masullo	2570	Prove `hardySobolevCutoff_spec` (Theorem 9.2.1.2(1), p. 404)	15
+mccorvie/riemann-masullo	2601	Prove `modulatedIntervalSobolev_enorm_Ici` (Lemma 9.2.2.10(3)(a), p. 417)	15
+mccorvie/riemann-masullo	2673	Prove `modulatedQuotientIsotypicProjector_idempotent` (Notation 4.5.1.1, p. 204)	15
+mccorvie/riemann-masullo	1441	Prove `finitePlace_quasiCharacterParametrization` (Equation (3.1.2.2), p. 120)	15
+mccorvie/riemann-masullo	1522	Prove `modulatedExponentialDecay_singleton_schwartz` (Example D.3.3.5, p. 805)	15
+mccorvie/riemann-masullo	1664	Prove `exists_pontryaginDual_localized_integral`	15
+mccorvie/riemann-masullo	1816	Prove `differentiableOn_mellin_of_forwardSemiExponentialDecay` (Proposition B.2.1.5(1), p. 594)	15
+mccorvie/riemann-masullo	2201	§B.6 Classical zero-free regions for Hecke L-functions (pp. 636–643)	15
+mccorvie/riemann-masullo	1119	Prove `adeleSchwartzFourier_apply_zero` (Theorem 2.2.3.2, p. 82)	15
+mccorvie/riemann-masullo	1236	Prove `globalThetaMellinIntegral_eq_continuation_of_vanishing` (Theorem 3.2.2.1(2)(a) and (3), pp. 124–125)	15
+mccorvie/riemann-masullo	1314	Prove `regularL2_haar_radon` (Lemma 4.3.1.3, p. 175)	15
+mccorvie/riemann-masullo	1327	Prove `regularIsotypic_ae_integrable` ((4.3.2.1), p. 178)	15
+mccorvie/riemann-masullo	1359	Prove `schwartzBruhatIsotype_quotient_map` (Lemma D.2.2.1(1), p. 795)	15
+mccorvie/riemann-masullo	1425	§B.1 Convexity bound on L_f(s, χ) (pp. 588–591)	15
+mccorvie/riemann-masullo	472	Prove `pontryaginDual_bidual` (Theorem D.1.1.1(2), p. 746)	15
+mccorvie/riemann-masullo	528	Prove `rapidDecaySequence_isFrechet` (Remark D.1.3.6, p. 753)	15
+mccorvie/riemann-masullo	578	Prove `hilbertTrace_linear` (Lemma C.3.4.4(3), p. 698)	15
+mccorvie/riemann-masullo	663	Prove `measurableSet_image_of_continuous_injOn_polish` (Theorem A.5.2.8, p. 571)	15
+mccorvie/riemann-masullo	862	Prove `schwartzBruhat_translate_mem` (Proposition D.1.9.2, p. 781)	15
+mccorvie/riemann-masullo	5308	Prove `spectralStripAmbientKernel_tendsto` (Theorem 10.4.3.5(2), pp. 472–473)	15
+mccorvie/riemann-masullo	5700	Prove `finiteHeckeL_unitaryHeckeCharacter`	15
+mccorvie/riemann-masullo	295	Prove `sAdeleFundamentalDomain_finite_translates` (Lemma A.2.4.2(2), p. 554)	15
+mccorvie/riemann-masullo	308	Prove `sLocalIdeleFundamentalDomain_finite_translates` (Proposition A.2.4.4(3), p. 555)	15
+mccorvie/riemann-masullo	415	Prove `isIntegralBilinearForm_iff_radon` (Proposition C.2.4.8, p. 688)	15
+mccorvie/riemann-masullo	426	Prove `tensorToFiniteRank_tmul` ((C.2.4.7), p. 689)	15
+mccorvie/riemann-masullo	4702	Prove `tendsto_adelicTheta_of_dominated` (Corollary 11.1.1.4, p. 478)	15
+mccorvie/riemann-masullo	4806	Prove `Printed.sLocalThetaEigendistributions_separate_of_interval_false` (Remark 5.5.3.3, p. 285)	15
+mccorvie/riemann-masullo	4895	Prove `sLocalThetaSobolevAverage_quotient_equiv` (Proposition 10.1.1.5(1), p. 437)	15
+mccorvie/riemann-masullo	5000	Prove `Printed.spectralStripJet_not_subset_ball_singleton_false` (Proposition 10.2.2.2, p. 447)	15
+mccorvie/riemann-masullo	5102	Prove `archRegularizedFiniteHeckeL_apply` (Equation (7.4.3.5), p. 368)	15
+mccorvie/riemann-masullo	5172	Prove `sLocalCarvingBand_radius_two` ((11.1.2.3), p. 480)	15
+mccorvie/riemann-masullo	3891	Prove `finiteLogFourier_eq_neg_haar` (Proposition B.4.3.1(2), p. 617)	15
+mccorvie/riemann-masullo	4050	Prove `sLocalIdelicOrderBound_eq_neg_poleOrder` (Lemma 7.1.2.2, p. 317)	15
+mccorvie/riemann-masullo	4111	Prove `existsUnique_sLocalThetaIsotypicAverage` (Proposition 5.2.3.2(1), p. 236)	15
+mccorvie/riemann-masullo	4162	Prove `sLocalThetaPrincipalValue_isotypicAverage` (Lemma 5.3.1.5, p. 242)	15
+mccorvie/riemann-masullo	4243	Prove `sAdelePolarFree_isClosed` (Lemma 5.3.4.2(1), p. 260)	15
+mccorvie/riemann-masullo	4427	Prove `sLocalThetaEigendistributions_separate_of_accumulation` (Remark 5.5.3.3, p. 285)	15
+mccorvie/riemann-masullo	3433	Prove `elementarySchwartz_isFrechet` (Lemma D.1.3.5(2), p. 752)	15
+mccorvie/riemann-masullo	3450	Prove `schwartzBruhatStage_transition` (Lemma D.1.5.4, p. 762)	15
+mccorvie/riemann-masullo	3862	Prove `finiteHeckeL_hasSum_ideals` (Equation (B.6.1.2), p. 636)	15
+mccorvie/riemann-masullo	3868	Prove `heckeIdealSummatory_tendsto_zero_of_nontrivial_on_normOne` (Lemma B.6.1.2(2), p. 637)	15
+mccorvie/riemann-masullo	3883	Prove `heckeLogDiscriminantConductor_one` (Equation (B.4.2.3), p. 614)	15
+mccorvie/riemann-masullo	3887	Prove `complexHeckeArchimedean_mellinLogDeriv` (Proposition B.4.2.1, p. 616)	15
+mccorvie/riemann-masullo	285	Prove `ideleFundamentalDomain_disjoint` (Proposition A.2.3.10(2), p. 552)	15
+lance-format/lance	11368	bug: IVF vector search ignores distance_range when the prefilter matches k rows or fewer	15
+l0ng-ai/openidea	5176	在编辑器和终端里面，fcitx5 中文输入法打字时不跟随光标。	15
+open-metadata/OpenMetadata	38327	Looker: lineage for derived tables whose SQL holds Liquid	14
+open-metadata/OpenMetadata	38363	[Detail Bug] Inbox task resolution skips required workflow transition forms, resolving tasks without required data	14
+elie222/rakazo	6213	Web E2E gallery.spec.ts fails strict mode on getByText(\'This call\')	14
+omnigent-ai/omnigent	14624	[Bug] Audit operation is always "unmatched" on FastAPI 0.141 and later	14
+stablyai/orca	47623	Per-workspace VMs reached over SSH each show up as a host in Run on	14
+stablyai/orca	46414	[Feature]: Support to OpenProject	14
+stablyai/orca	46671	[Bug]: action.openPopup rejects empty options and ignores an explicit windowId	14
+stablyai/orca	47010	[Bug]: Images opened by an agent\'s Read tool show as broken images in native chat	14
+makecindy/cindy	12237	[维护者确认] PR #12226 feat(desktop): 内置 Open Artifact，支持 /artifacts	14
+makecindy/cindy	12015	PR #12007 需要维护者确认：每晚记忆整理放行口径改为「自上次整理以来累计」（产品行为变更 + 规则文档变更）	14
+Dolibarr/dolibarr	43255	Bug: Supplier subtotal actions duplicate the installation path	13
+python/cpython	162418	sqlite3 docs: a series of SELECTs is not a consistent read snapshot under default transaction control	13
+ggml-org/llama.cpp	32858	Vulkan: q6_K token_embd rejected by Vulkan_Host buffer, silently kept on CPU (graph splits=2, GPU slower than CPU) - Qwen3.5 dynamic-quant GGUFs	13
+ggml-org/llama.cpp	32821	Misc. bug: GGUF loader aborts when tensor data exceeds file size	13
+ai-dynamo/dynamo	19286	[FEATURE]: Apply test dependency caps per framework, not in the shared requirements.test.txt	12
+storytold/effectcraft	4083	Audio tests: AAC and Opus mono fixtures decode √2 louder than ALAC (RMS 0.088 vs 0.0625)	12
+raycast/extensions	33849	[Fetch YouTube Transcript]...	12
+agentic-os-org/ANOLISA	10465	bug(tokenless): browser snapshot /url lookup scans past shallower ancestors and attaches URLs to unrelated nodes	12
+opengeos/RustGIS	2571	[Feature]: Create Point by Coordinates	11
+camunda/camunda	70510	Raft: a passive member never becomes a candidate	11
+frappe/erpnext	69172	Getting Started video on completing setup	10
+gke-labs/kube-agents	6873	pushed-report frame: neutralise the user-reply label inside a report, as the frame\'s markers are	10
+gke-labs/kube-agents	6810	profiles: the broker refuses a task\'s further writes after its first write refusal	10
 gke-labs/kube-agents	6683	test(busmigrate): cover drift outside max_consumers on the forward restore; always stop the three-server clusters	10
-gke-labs/kube-agents	6475	ci(eval): shared GitHub App rate limit turns every nightly part red at rung 2 (forge safeguard checks cannot run)	10
-gke-labs/kube-agents	6368	Three case files say that seeded-a has three node pools	10
-gke-labs/kube-agents	6544	feat(k8s-api-proxy): support non-GCP in-cluster mode without ADC and rotating bearer token files on static upstreams	10
-keiyoushi/extensions-source	21262	LectorXD: Add support for the "Novels" section (chapters are hosted as images)	10
-SatyamPandey-07/WorkSphere	8572	[FEAT] Implement Verifiable DH-OPRF Mutual Private Set Intersection Prover (ZeroKnowledgePrivateSetIntersectionProver)	10
-SatyamPandey-07/WorkSphere	9044	[ZKP] Implement ZeroKnowledgeVerifiableDelayFunctionProver architectural cryptographic module	10
-SatyamPandey-07/WorkSphere	9064	[ZKP] Implement ZeroKnowledgeGraphReachabilityProver architectural cryptographic module	10
-milvus-io/milvus	55670	[Bug]: Milvus Go client interpolates VARCHAR primary keys into filter literals without escaping	10
-milvus-io/milvus	55772	[Enhancement]: Support snapshot import in Import V3	10
-expo/expo	53933	[expo-updates] After error recovery falls back to an earlier update, the app stays on the splash screen	10
-expo/expo	53907	Android notification channel reads and writes fail in Expo Go	10
-ashhart/TensorFold	4074	Web stand-in still reports 1.2.10 after the 1.3.0 version bump	9
-vllm-project/semantic-router	6962	[Feature] Turn a decision\'s reasoning off when the client\'s output limit is too small for it	9
-QwenLM/qwen-code	17936	Release Failed for v0.28.1 on 2026-11-20	9
-openchamber/openchamber	7176	[Feature] Recover OpenUI blocks with assignments in child arrays	9
-flutter/flutter	196863	[GNU/Linux] [P1] Reopen app window from tray icon will get black screen	9
-vercel/next.js	102105	Turbopack: webpack loader options cost memory for every matched module	9
-dotnet/maui	40467	[MAUI] I9 -Incremental loading on scroll for \'RemainingItemsThreshold\' - Opens an exception CLR/ObjCRuntime.ObjCException	9
-dotnet/runtime	137963	[API Proposal]: compiled glob matching and streaming file selection	9
-tangency-labs/solidcore	3337	Delete Face with healing belongs in solidcore-ops	9
-tangency-labs/solidcore	3350	Boolean: two equal r4 cylinders crossing at right angles with axes 1e-5 apart give an open result	9
-keycloak/keycloak	55382	[CVE-2026-133228] A client\'s minimum ACR is not applied when the login starts at the credential reset endpoint (Keycloak 26.8.2)	9
+NVIDIA/Megatron-LM	9645	Support model-specific mHC output contraction in HybridModel	10
+longbridge/nsh	2754	Android: a WebView stops painting when a sibling view has backdropFilter	10
+shopware/shopware	23311	Read into typed DTO projections through partial loading	10
+esphome/esphome	23091	ESP32: LoadProhibited in tcp_free_acked_segments	10
+anomalyco/opencode	65431	[FEATURE]: Webview-based UI for Better CTL (Bengali/RTL) Language Support	9
+anomalyco/opencode	65451	Web app: typing lags with many open session tabs (work per session change grows with the square of the tab count)	9
+anomalyco/opencode	65504	[FEATURE]: Custom session categories with per-category visibility in the session picker	9
+anomalyco/opencode	65522	cli: mcp list ignores opencode.json in parent directories (debug config and sessions see it)	9
+anomalyco/opencode	65583	Nix dependency install copies nested node_modules more than once	9
+flutter/flutter	197134	[macOS] AXPlatformNodeCocoa startEditing crash typing into secure TextField with AX attached (3.50 regression)	9
+keiyoushi/extensions-source	21371	[Manga Starz] Manga pages redirect to homepage and latest chapters are missing	9
 egoist/mygo	2139	android: the toolbar\'s title and back arrow keep the colors of the theme the app started in	9
-monarch-initiative/dismech	18640	[citation-scan] Juvenile Paget Disease: long-term zoledronate outcomes in four children with TNFRSF11B variants	9
-monarch-initiative/dismech	18430	Curate RAD51D-related cancer predisposition (MONDO:0700274)	9
-anomalyco/opencode	64643	Sessions remain on the old project after origin changes without an identity marker	9
-anomalyco/opencode	64752	shell: output capture fails - missing ~/.local/share/opencode/shell directory	9
-anomalyco/opencode	64757	Problem creating a project	9
-anomalyco/opencode	65138	desktop: model selector flyout causes infinite recursion / freeze when zoomLevel != 1 (v2.3.2 regression)	9
-lingdojo/kana-dojo	34394	[good first issue, hacktoberfest] 🀄 Add new Wallpaper URL #31 (good-first-issue)	9
-lingdojo/kana-dojo	34268	[good first issue, hacktoberfest] 🍶 Add new Example Sentence 699 (good-first-issue)	9
-lingdojo/kana-dojo	34286	[good first issue, hacktoberfest] 🎌 Add new Etiquette Tip 1090 (good-first-issue)	9
-pollinations/pollinations	20324	F-01 — The generation cache is public, identity-blind, permanent — and it can be poisoned (Critical)	8
-metabase/metabase	87615	Documents: Charts can be collapsed into a broken state with Delete key	8
-ray-project/ray	68279	[Data] Deprecate `ray.data.read_hudi`	8
-meshery/meshery	23918	[Server] Setting INSTANCE_ID, as the environment variable docs show, panics the server at boot	8
-meshery/meshery	23925	[Docs] Documentation site returns 404 for v0.8, v0.9 and latest versions	8
-OrchestratorInc/agent-orchestrator	8697	Usage-limit turn failure leaves queued (automated) turns stalled after reset, with no alert	8
-Aurora-Viewer/Aurora-Viewer	4134	Terrain Texture Rendering Issue in Sansara	8
-Aurora-Viewer/Aurora-Viewer	4304	Full mouse control \'goes away\' with multiple Aurora instances open	8
-CherryHQ/cherry-studio	24974	[Feature]: Collapse Agent tool-execution records by default and show a one-line summary	8
-torch-spyre/torch-spyre	6493	[Padding] insert_restickify_padding fails for concatenated tensors written into buffer slices	8
+QwenLM/qwen-code	18077	chore(managed-agent): ToolPublicationDataStore exceeds the class-size ratchet (2485 > 2483)	9
+QwenLM/qwen-code	18081	Harden transcript export compatibility checks and follow-up contract notes	9
+openvinotoolkit/openvino	40218	[Bug]: Intel NPU 3720: Qwen3.5-4B prefill device loss and incorrect logits on OpenVINO 2026.5.1 RC	8
+openvinotoolkit/openvino	40181	LFM2.5-1.2B-int4-ov fails to compile on NPU (NPU37XX): Unsupported DynamicDequantizeOp configuration (u4:f16, zp=NULL) in OneShotBufferizeVPU2VPUIP	8
+lingdojo/kana-dojo	34394	[good first issue, hacktoberfest] 🀄 Add new Wallpaper URL #31 (good-first-issue)	8
+SatyamPandey-07/WorkSphere	9246	docs(booking): author timezone-safe DST desk reservation duration guide	8
+SatyamPandey-07/WorkSphere	9253	feat(admin): add clear filters button and active filter chips to triage desk	8
+SatyamPandey-07/WorkSphere	9509	fix(mesh): prevent memory leak from unremoved WebRTC DataChannel message listeners	8
+neomjs/neo	21601	A cold-boot Reset commits the Feed to main but never renders it	8
+neomjs/neo	21613	The planning groups publish the examples merged by the lock	8
+monarch-initiative/dismech	18640	[citation-scan] Juvenile Paget Disease: long-term zoledronate outcomes in four children with TNFRSF11B variants	8
+open-telemetry/opentelemetry-collector-contrib	53453	[receiver/github] cicd.pipeline.name on workflow_job spans is the job name, and the workflow name is missing	8
