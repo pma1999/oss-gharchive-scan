@@ -1,27 +1,27 @@
 repo_name	number	title	autores
-openclaw/openclaw	204730	CI: server-database-engine-cron.postgres restart test gets 503 intermittently	39
-openclaw/openclaw	204935	[Bug]: `infer model run` fails on literal `HEARTBEAT_OK` and `NO_REPLY` replies through the Gateway	39
+sgl-project/sglang	53277	[CI] test_inkling2.py fails on main: 4-gpu-gb300 runner g++ rejects -march=armv9-a	39
+openclaw/openclaw	206773	[Feature]: Search the Control UI device inventory by name or ID	39
 openclaw/openclaw	204991	hooks: mapping templates drop mixed-case header references like {{headers.X-GitHub-Event}}	39
 openclaw/openclaw	205055	[Bug]: Live plugin side questions merge into the parent request on Chat Completions	39
 openclaw/openclaw	205556	[Bug]: Android realtime Talk closes immediately (0.5–1.0s) over wired Android Auto	39
 openclaw/openclaw	205882	[Bug]: Control UI sidebar silently drops a pinned agent main session (agent:main:main)	39
-sgl-project/sglang	53277	[CI] test_inkling2.py fails on main: 4-gpu-gb300 runner g++ rejects -march=armv9-a	39
 vllm-project/vllm	70055	[Bug]: HiSparse completes a wasted host import after the request is aborted	35
 vllm-project/vllm	70296	[Bug]: Skipping prompt logprob rows can erase the decoded text of a scored Unicode token	35
-nwverse/persona	15373	Docs: re-anchor the checked-mail mirror feature citation	33
-nwverse/persona	15638	Unify Needs you counts across main chat and sidebar, separate user_check verification, and keep unescalated supervised errors with their supervisor	33
-nwverse/persona	15803	Support Hub-to-computer SSH in Machines → Add Computer	33
-nwverse/persona	15866	Web: stop assistant badge collection from updating forever	33
-nwverse/persona	16737	fix(pr-watch): stale activity sends `false` for completed GraphQL string cursors, blocking every busy PR	33
-nwverse/persona	16920	Extensions: storage is refused as retired after any settings change until the manager restarts	33
-elastic/elasticsearch	167498	[ML] ES|QL datafeeds: an outer LIMIT below 10000 silently caps every extraction chunk	27
-elastic/elasticsearch	167592	[CI] RoundToTests testFoldAnyNullIsNullWithoutFoldNull {TestCase=<long, 7 ints> null in 4} failing	27
+nwverse/persona	17339	fix(dsh): assistant memoryWrite() silently auto-approves relative write/edit paths and symlink/truncation escapes	34
+nwverse/persona	15373	Docs: re-anchor the checked-mail mirror feature citation	34
+nwverse/persona	15638	Unify Needs you counts across main chat and sidebar, separate user_check verification, and keep unescalated supervised errors with their supervisor	34
+nwverse/persona	15803	Support Hub-to-computer SSH in Machines → Add Computer	34
+nwverse/persona	15866	Web: stop assistant badge collection from updating forever	34
+nwverse/persona	16737	fix(pr-watch): stale activity sends `false` for completed GraphQL string cursors, blocking every busy PR	34
+nwverse/persona	16920	Extensions: storage is refused as retired after any settings change until the manager restarts	34
+elastic/elasticsearch	167498	[ML] ES|QL datafeeds: an outer LIMIT below 10000 silently caps every extraction chunk	28
+elastic/elasticsearch	167592	[CI] RoundToTests testFoldAnyNullIsNullWithoutFoldNull {TestCase=<long, 7 ints> null in 4} failing	28
 tenstorrent/tt-metal	67328	[tt-train] C++ RowParallelLinear with input_is_parallel=false gives tp times the gradient	27
 ClickHouse/ClickHouse	134305	Top-K is not pushed through aligned ARRAY JOIN with identical expressions	26
 ClickHouse/ClickHouse	134368	Catalog tables resolve an `Alias` table into a remote database although `show_remote_databases_in_system_tables = 0`	26
 ClickHouse/ClickHouse	134373	After a power loss, a MODIFY COLUMN mutation of a dropped column fails on every retry and blocks later mutations	26
-microsoft/vscode	350320	Agent Host nested chats created via `create_session` display wrong fallback model in UI (and lose explicit `model` on draft / turn replay)	24
-kirodotdev/KiroCrew	42138	Agent Harness line misses Bots kept on Kiro Agent and their Kiro sign-in state	24
+kirodotdev/KiroCrew	43605	Voice: Hindi and Arabic-script replies are not split at their sentence ends, so the first audio waits for the whole paragraph	24
+kirodotdev/KiroCrew	43610	An agent can switch off a user hook: ~/.kiro/hooks is writable in the sandbox while ~/.kiro/agents is sealed	24
 kirodotdev/KiroCrew	42375	Windows desktop: an update on quit never stops an adopted gateway that runs from the app\'s own bundle	24
 kirodotdev/KiroCrew	42410	kirocrew doctor\'s installer-residue check never looks in the per-runtime scratch folders that each kiro-cli gets as its TEMP	24
 kirodotdev/KiroCrew	42584	Windows: the deny floors do not read a `pwsh -c` or `powershell -Command` script, so a refused ssh, git push or credential mint passes inside it	24
@@ -30,31 +30,36 @@ kirodotdev/KiroCrew	42930	Follow-up to #42101: src/kiro_crew/docs/dashboard.md s
 kirodotdev/KiroCrew	42996	Crew API: GET /v1/crew/bots does not see a Bot\'s turn that has no live session (hidden scheduled run, channel thread with no tab)	24
 kirodotdev/KiroCrew	43282	Dashboard: list what still needs inline script before dropping \'unsafe-inline\', starting with the sign-in page	24
 kirodotdev/KiroCrew	43351	feat(memory): merge the rows a member store is missing back from an older copy, keeping their provenance	24
+microsoft/vscode	350320	Agent Host nested chats created via `create_session` display wrong fallback model in UI (and lose explicit `model` on draft / turn replay)	24
+MetaMask/metamask-mobile	40480	Upgrade @metamask/wallet to version 22.0.0	23
+R0Y00/Xbox2Windows	3209	runtime: prove the GPU writer for indirect compute launch records	23
+R0Y00/Xbox2Windows	2610	startup-runtime: startup stalls ~120 s after #2395 (an unplaced memory SRV wraps a ~2.15 GiB allocation, VirtualQuery over it becomes slow)	23
 ROCm/rocm-systems	16764	rocprofiler-sdk: get_config_perf_counters() reads a temporary config instead of the global one	23
-R0Y00/Xbox2Windows	2610	startup-runtime: startup stalls ~120 s after #2395 (an unplaced memory SRV wraps a ~2.15 GiB allocation, VirtualQuery over it becomes slow)	22
-MetaMask/metamask-mobile	40480	Upgrade @metamask/wallet to version 22.0.0	22
+yugabyte/yugabyte-db	39577	[DocDB] `TServerPathHandlersItest.TestSnapshotsEndpoint` fails on master: Expected: (rows.size()) >= (N), actual: N...	21
 yugabyte/yugabyte-db	39210	[ConnMgr] Odyssey spins on a readable client socket while a new backend starts	21
 yugabyte/yugabyte-db	39366	[YSQL] Debug assertion in AtEOXact_RelationCache at commit of concurrent CREATE OR REPLACE FUNCTION with Read Committed	21
 yugabyte/yugabyte-db	39469	[YSQL] Transaction priority bounds can end up lower > upper; code assuming lower <= upper misbehaves	21
-storytold/photocraft	17119	perf(gpu): a layer tile that changes during a frame costs about 5× more than the same tile uploaded in bulk	18
 makecindy/cindy	12723	PR #12646 维护者确认：修改规则文档 docs/dev-rules/maker-core-and-agent-behavior.md	17
 makecindy/cindy	12893	维护者确认请求：PR #12731 插件基座 / 产品 UI / 规则文档改动需明确 Approve	17
 makecindy/cindy	13455	PR #13411 插件基座改动需维护者确认	17
-Expensify/App	108100	Investigate workflow job failing on main: build (Debug, true)	16
-l0ng-ai/openidea	5701	Editor: Convert Indents to Spaces / to Tabs actions	16
+storytold/photocraft	17119	perf(gpu): a layer tile that changes during a frame costs about 5× more than the same tile uploaded in bulk	16
 l0ng-ai/openidea	5866	perf(java): go-to-declaration stalls on large projects — background usage and hierarchy work competes with jdtls	16
 l0ng-ai/openidea	6064	Java Spring Cloud多模块项目，其他软件修改代码后，通过openidea编译时经常提示 xxx包不存在，但实际上是正常的，其他软件可以正常启动该项目	16
 l0ng-ai/openidea	6267	Editor: Move Up / Move Down and Scroll that keep the caret\'s place on screen	16
 l0ng-ai/openidea	6363	Project view: Compare File with Editor	16
+Expensify/App	108100	Investigate workflow job failing on main: build (Debug, true)	16
 inclusionAI/Avernet	4516	Align community filter layouts and typography	15
-bytedance/deer-flow	8696	[bug] Custom-agent chats can reject a model switch or lose their selected reasoning effort	14
-langgenius/dify	47224	Dynamic MCP HTTP headers are not resolved in Agent V2, but work in legacy Agent (v1.20.0)	14
 lance-format/lance	11481	perf: retire the legacy shared-UUID FTS build path	14
 lance-format/lance	11513	bug: a writer opened before manifest migration can publish a V1 manifest that fresh readers miss	14
 lance-format/lance	11536	bug: merge_insert and compaction raise PanicException after committing when another thread uses the dataset	14
+open-metadata/OpenMetadata	39029	ILikeRatio.fn docstring claims it computes \'null ratio\' instead of ILIKE ratio	14
+open-metadata/OpenMetadata	39044	Docstring Args list a \'column\' parameter that doesn\'t exist in the signature	14
+open-metadata/OpenMetadata	38827	SAS connector deletes custom property values set outside SAS	14
+mastra-ai/mastra	31760	[BUG] `recall` with `partIndex` + `charOffset` cannot read past ~4,000 tokens of a tool result, and reports the part as complete	14
 mastra-ai/mastra	31401	[BUG] Observational Memory runs twice when its processor is inside a processor workflow	14
 ROCm/aiter	8774	[Issue]: fused_moe MXFP8 (per_1x32) with the default gate_mode="separated": CK 2-stage module fails to build on gfx950	14
-stablyai/orca	48446	Slack: option to wake a bot in shared threads only when @-mentioned	14
+stablyai/orca	50981	[Feature]: Pin the current prompt at the top of the chat while scrolled back	14
+stablyai/orca	51053	[Bug]: Codex "Hooks need review" menu that appears after tui-idle succeeds is missed; worker-start types into it	14
 stablyai/orca	49295	[Bug]: OMP reasoning renders as permanently expanded prose with no way to hide it	14
 stablyai/orca	49549	[Bug]: Orca Native Chat omits OMP subagent edits from the Changed files card	14
 stablyai/orca	49621	[Bug]: Windows: Orca\'s main process locks any *.asar file it stats (e.g. a path printed in the terminal)	14
@@ -64,64 +69,63 @@ stablyai/orca	50181	[Feature]: Keep newly added agent integrations off by defaul
 stablyai/orca	50616	[Feature]: Native Deepgram STT provider & WebSocket streaming dictation	14
 stablyai/orca	50620	[Bug]: Gmail attachments stored directly in body.data disappear from reads and forwards	14
 stablyai/orca	50783	[Feature]: worker-start --model/--effort for mistral-vibe (vibe --model / --thinking)	14
-open-metadata/OpenMetadata	38827	SAS connector deletes custom property values set outside SAS	14
+langgenius/dify	47224	Dynamic MCP HTTP headers are not resolved in Agent V2, but work in legacy Agent (v1.20.0)	14
+supabase/supabase	54097	OAuth token security audit query references columns that do not exist	14
+bytedance/deer-flow	8696	[bug] Custom-agent chats can reject a model switch or lose their selected reasoning effort	13
 omnigent-ai/omnigent	14951	Automation dialog: the agent picker\'s Models list can\'t be scrolled with the wheel or trackpad	13
 omnigent-ai/omnigent	14957	[Feature] Suggest a new session title with AI on demand	13
 omnigent-ai/omnigent	15084	Pi executor: Interrupt during a stalled prompt write is lost (`abort_requested` reset after `await`)	13
+unslothai/unsloth	19660	torch and pyarrow imports exit 139 in the Studio virtual environment on Linux	13
+unslothai/unsloth	19842	[Feature] Multi-User Central Hub with SSO, Mesh Compute Nodes, and Cross-Device Computer Use	13
 python/cpython	162671	Support selecting hypothesis tests by label	13
-supabase/supabase	54097	OAuth token security audit query references columns that do not exist	13
 pytorch/executorch	25767	[exir] operator.pow on a SymInt has no emitter target	13
+expo/expo	54405	[expo-location][android] ConcurrentModificationException in resumeLocationUpdates when a watch is removed as the app resumes	12
 Bike4Mind/bike4mind	8533	chore(media): remove /api/ai/music at its 2027-01-15 sunset	12
 Bike4Mind/bike4mind	8726	Webhook delivery: retryable failures are acknowledged without a retry	12
-unslothai/unsloth	19660	torch and pyarrow imports exit 139 in the Studio virtual environment on Linux	12
-unslothai/unsloth	19842	[Feature] Multi-User Central Hub with SSO, Mesh Compute Nodes, and Cross-Device Computer Use	12
-kubernetes-sigs/kueue	19593	🧹 Strengthen DeviceClass selector test coverage in pkg/dra	12
 kestra-io/kestra	23222	Add Turkish (tr) UI language	12
-ggml-org/llama.cpp	32969	Feature Request: Make Parse PDF as image DPI configurable	12
-storytold/effectcraft	4205	Text tracking adds space after the last glyph, so right-aligned text shifts inwards	11
-dotnet/maui	40701	[aw] No-Op Runs	11
+kubernetes-sigs/kueue	19593	🧹 Strengthen DeviceClass selector test coverage in pkg/dra	12
 opengeos/RustGIS	3078	Use the AI Assistant from the phone app	11
+storytold/effectcraft	4205	Text tracking adds space after the last glyph, so right-aligned text shifts inwards	11
+cheaper-inference/OmniRoute	21284	[BUG] PUT /api/provider-models (contextWindowOverride) silently demotes the model from Imported to Custom (source: endpoint-override)	11
+openchamber/openchamber	7767	[Bug] macOS Window menu does not list open instance windows	11
+dotnet/maui	40701	[aw] No-Op Runs	11
+kubernetes/kubernetes	144489	Allow updating ImageVolume references on existing Pods, with changes applied on container recreation	11
 storytold/pdfcraft	8291	Split several files in one run (organize.split-multiple-files)	11
-Comfy-Org/ComfyUI_frontend	24257	Vue nodes call onMouseDown when the canvas disallows interaction	11
 WordPress/gutenberg	87415	Editor: "Copy contents" on the crash screen copies an empty string	11
 WordPress/gutenberg	87502	[Block] Query Loop: Enhanced pagination breaks block style variations below the query block on the last page with fewer posts	11
-cheaper-inference/OmniRoute	21284	[BUG] PUT /api/provider-models (contextWindowOverride) silently demotes the model from Imported to Custom (source: endpoint-override)	11
-kubernetes/kubernetes	144489	Allow updating ImageVolume references on existing Pods, with changes applied on container recreation	11
-openchamber/openchamber	7533	[Bug] Agent loses control of scripted browser popups on desktop	11
+Comfy-Org/ComfyUI_frontend	24257	Vue nodes call onMouseDown when the canvas disallows interaction	11
 aurora-silicon/linux	3118	drm/asahi: G14 GPU on firmware 27.2 is capped at 444 MHz; the full range stalls the firmware	11
 egoist/mygo	2375	RFC: a low-level video API on the system\'s decoders	10
-kvcache-ai/Mooncake	5848	[RFC]: [Store] Event-driven background memory eviction with EvictionCoordinator	10
 The-PR-Agent/pr-agent	5170	Flaky test: test_comment_history_shares_deadline_across_pages fails on slow Python 3.14 runners	10
-flutter/flutter	197498	[iOS 26][WeChat WKWebView] CanvasKit: first frame paints all content, next repaint drops entire body subtree (layout correct, y-offset jumps to bogus value); normal in Safari, Android OK, skwasm also affected	10
-MakazhanAlpamys/Soup	3356	Make the native MLX slow-reader test independent of runner timing	10
+gke-labs/kube-agents	7504	worker-adapter: strip control characters from and clip a file name in an activity title	10
 gke-labs/kube-agents	7245	bench: session-cluster-question-wake-answers-once can\'t see a wake loop that stops at the depth bound without a refusal	10
 gke-labs/kube-agents	7259	bench: inject_transport comment and activity_entries docstring for call_id	10
 gke-labs/kube-agents	7287	🎲 flaky check: Python Unit Tests: test_worker_transcript.TestLongSimpleCommandIsWithheld	10
-Aurora-Viewer/Aurora-Viewer	4870	Crash: unexpected shutdown (0.9.13)	10
 Aurora-Viewer/Aurora-Viewer	4988	Music stopped working	10
 shopware/shopware	23412	Experience Studio: define a permission concept	10
+MakazhanAlpamys/Soup	3356	Make the native MLX slow-reader test independent of runner timing	10
+flutter/flutter	197498	[iOS 26][WeChat WKWebView] CanvasKit: first frame paints all content, next repaint drops entire body subtree (layout correct, y-offset jumps to bogus value); normal in Safari, Android OK, skwasm also affected	10
+kvcache-ai/Mooncake	5848	[RFC]: [Store] Event-driven background memory eviction with EvictionCoordinator	10
 agentic-os-org/ANOLISA	10694	bug(sight): GET /api/preferences?llm=true negative-caches degraded llm_enabled: false responses for 10 minutes	10
 volcengine/OpenViking	8455	[Bug]: SDK Session.batch_add_messages cannot forward batch options	9
+OrchestratorInc/agent-orchestrator	9150	AI model error. It is primarily a Windows executable permission/security-policy issue.	9
+tangency-labs/solidcore	3444	Boolean: extruding a ring down onto a body with a spline-swept circle fails in topology_intersector relate ("another entity is already related to the other one")	9
 matrixorigin/matrixone	33316	[Bug]: COPY ALTER ADD COLUMN FIRST makes MASTER-indexed rows invisible	9
 matrixorigin/matrixone	33354	[Bug]: COPY ADD NOT NULL without DEFAULT synthesizes invalid VARBINARY/YEAR/UUID/TIMESTAMP backfills	9
 matrixorigin/matrixone	33356	[Bug]: COPY ALTER cannot replay tables with RTREE/spatial indexes	9
-anomalyco/opencode	66131	claude-agent: location reload tells the session the user stopped it, and it never continues	9
 anomalyco/opencode	66337	WebUI: renders chat text noticeably bolder than Desktop	9
 anomalyco/opencode	66426	pty: helper missing on aarch64 Android, every shell command falls back (2,000 warnings in one log)	9
 anomalyco/opencode	66693	agent: repeated identical tool calls run indefinitely with no doom_loop detection (v2.4.2)	9
-OrchestratorInc/agent-orchestrator	9150	AI model error. It is primarily a Windows executable permission/security-policy issue.	9
 meshery/meshery	24427	[Server] Fix infinite recursion, slice-bounds panic, and nil-pointer dereferences in alias relationship resolution	9
-QwenLM/qwen-code	18392	Release Failed for v0.28.6 on 2026-11-26	8
-QwenLM/qwen-code	18430	test(managed-agent): add a native minimal example with Dockerized Session verification	8
-CherryHQ/cherry-studio	25534	[Feature]: Lag when switching and sending in long conversations (with large tool outputs); suggest using virtual scrolling for the message list	8
-JuliaLang/julia	65305	Cached generated functions crash or hang on `edges` in the format inference records (`jl_code_for_staged`)	8
-neomjs/neo	22170	Support ?search query parity and per-windowId pathname routing in core	8
-neomjs/neo	22283	Desktop and nine other packages paint 22 bare colour literals	8
-cloudflare/cloudflare-docs	35622	fix(email-service): API reference send examples pass an unsupported body wrapper	8
-storytold/filmcraft	5259	There\'s less options to edit subtitles than the other one	8
-multica-ai/multica	11627	[Bug]: Chat output only renders after pressing Stop/Pause, even though the task already completed	8
-multica-ai/multica	11674	Team sidebar Squads count shows all squads, but the page opens on My squads	8
-monarch-initiative/dismech	18907	Curate SETD2-related neurodevelopmental disorder without or with macrocephaly/overgrowth (MONDO:0800477)	8
-monarch-initiative/dismech	19038	Curate tuberculous peritonitis (MONDO:0006000)	8
 milvus-io/milvus	55955	[Bug]: Refused RESTful requests leave different access log and authorization report content than gRPC	8
 milvus-io/milvus	56114	[Enhancement]: Parse filter expressions with a galop-generated parser (about 3x faster)	8
+storytold/filmcraft	5259	There\'s less options to edit subtitles than the other one	8
+monarch-initiative/dismech	18907	Curate SETD2-related neurodevelopmental disorder without or with macrocephaly/overgrowth (MONDO:0800477)	8
+monarch-initiative/dismech	19038	Curate tuberculous peritonitis (MONDO:0006000)	8
+neomjs/neo	22170	Support ?search query parity and per-windowId pathname routing in core	8
+neomjs/neo	22283	Desktop and nine other packages paint 22 bare colour literals	8
+JuliaLang/julia	65305	Cached generated functions crash or hang on `edges` in the format inference records (`jl_code_for_staged`)	8
+QwenLM/qwen-code	18392	Release Failed for v0.28.6 on 2026-11-26	8
+QwenLM/qwen-code	18430	test(managed-agent): add a native minimal example with Dockerized Session verification	8
+multica-ai/multica	11627	[Bug]: Chat output only renders after pressing Stop/Pause, even though the task already completed	8
+multica-ai/multica	11674	Team sidebar Squads count shows all squads, but the page opens on My squads	8
